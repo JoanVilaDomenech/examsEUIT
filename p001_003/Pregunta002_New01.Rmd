@@ -1,0 +1,50 @@
+Question
+========
+¿Cuál de las siguientes respuestas es <font size="5"> **FALSA** </font>?
+
+
+```{r data generation, echo = FALSE, results = "hide"}
+a <- "Una variable numérica (o cuantitativa) como la edad se puede convertir en grupos (p.e. <span>&#8804;</span> 20, 21-29, 30-39, <span>&#8805;</span> 40), y será una variable categórica (o cualitativa) nominal"
+b <- "Si de una población se selecciona al azar una muestra de individuos, esta muestra seguramente no estará sesgada" 
+c <- "Cuando la muestra tiene características muy diferentes de la población, la muestra esta sesgada"
+d <- "La 'Hipertensión' medida como 'Si'/'No', es una variable dicotómica"
+e <- "Una variable que responda a la pregunta ``En las 4 últimas ¿Hasta que punto el dolor le ha dificultado su trabajo habitual (incluido el trabajo fuera de casa y las tareas domésticas?'' con las siguiente posibles respuestas: 'Nada'/'Un poco'/'Regular'/'Bastante'/'Mucho', es una variable cualitativa (categórica), ordinal y los valores son *mutuamente excluyentes*"
+f <- "El sexo medido como 'Mujer'/'Hombre'/'No binario' es una variable categórica, pero no es dicotómica"
+g <- "Si en un estudio se miden los triglicéridos antes de iniciar un tratamiento, y los triglicéridos tras 6 meses de tratamiento, los valores de triglicéridos antes y a los 6 meses son datos aparaedos"
+  
+```
+
+Answerlist
+----------
+* `r a`
+* `r b`
+* `r c`
+* `r d`
+* `r e`
+* `r f`
+* `r g`
+
+Solution
+========
+* Una variable numérica (o cuantitativa) como la edad se puede convertir en grupos (p.e. <span>&#8804;</span> 20, 21-29, 30-39, <span>&#8805;</span> 40), y será una variable categórica (o cualitativa), pero ya que las categorías se pueden "ordenar", no es *nominal* sino **ordinal**.
+
+* Todas las demás respuestas son correctas.
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: Tipo Variables
+extype: schoice
+exsolution: 1000000
+exshuffle: 5

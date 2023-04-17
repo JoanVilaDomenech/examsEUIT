@@ -1,0 +1,84 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+options(scipen=999)
+
+```
+Para calcular el tamaño de muestra para estimar una media se debe aplicar la ecuación:
+
+${\scriptsize
+\begin{eqnarray}
+\text{n} = \frac{(z_{(\alpha/2)})^2 * \text{DE}^2}{\text{d}^2}
+\end{eqnarray}
+}$
+
+Para calcular el intervalo de confianza de una media se debe aplicar la ecuación:
+
+${\scriptsize
+\begin{eqnarray}
+\overline{\text{X}} \pm t_{(\alpha/2)} * \frac{\text{DE}}{\sqrt{\text{n}}}
+\end{eqnarray}
+}$
+
+¿Cuál de las siguientes respuestas es <font size="5"> **FALSA**</font>?
+
+Answerlist
+----------
+* Para calcular el tamaño de muestra, a mayor variabilidad (medida con la DE) menor tamaño de muestra
+* Para calcular el tamaño de muestra, a mayor confianza mayor tamaño de muestra
+* En la fórmula de intervalo de confianza, cuanto más grande sea el tamaño de muestra más estrecho será en intervalo de confianza
+* En la fórmula de intervalo de confianza, cuanto más grande sea la variabilidad (medida con la DE) más amplio será en intervalo de confianza
+* Para calcular el tamaño de muestra, la precisión va en el denominador y en la fórmula se representa como $d^2$
+
+
+Solution
+========
+
+* Para calcular el tamaño de muestra, a mayor variabilidad (medida con la DE) menor tamaño de muestra
+
+Es FALSO ya la DE está en el numerador. Si hay mas variabilidad (DE más grande) requerirá **mayor** tamaño de muestra.
+
+-----
+
+* Para calcular el tamaño de muestra, a mayor confianza mayor tamaño de muestra
+
+Es Correcto ya que la confianza va en el numerador, por ejemplo para una confianza del 95% el valor de **z** es 1,96, mientras que para una confianza del 99% el valor es 2,58, por lo tanto una confianza del 99% requiere mayor tamaño de muestra que una del 95%.
+
+-----
+
+* En la fórmula de intervalo de confianza, cuanto más grande sea el tamaño de muestra más estrecho será en intervalo de confianza
+
+Es correcto ya que la **n** está en denominador y cuanto más grande se el valor de **n**,  más pequeño será lo que habrá que sumar y restar a la media y por tanto el intervalo será más estrecho. Si el intervalo es "más estrecho", también se puede decir que es "más preciso".
+
+-----
+
+* En la fórmula de intervalo de confianza, cuanto más grande sea la variabilidad (medida con la DE) más amplio será en intervalo de confianza
+
+Es correcto ya que en la fórmula la DE está en el numerador, así que cuanto más grande sea la variabilidad (medida con la DE) más amplio será en intervalo de confianza (será "menos preciso").
+
+-----
+
+* Para calcular el tamaño de muestra, la precisión va en el denominador y en la fórmula se representa como $d^2$
+
+Esta afirmación es correcta.
+
+
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: XXXXX
+extype: schoice
+exsolution: 10000
+exshuffle: 5

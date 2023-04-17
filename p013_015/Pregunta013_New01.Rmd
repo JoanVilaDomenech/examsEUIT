@@ -1,0 +1,95 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+meanBarIng <- sample(seq(44, 50, 0.1), 1)
+varBarIng <- sample(seq(550, 650, 0.1), 1)
+
+meanBarAlt <- sample(seq(78, 84, 0.1), 1)
+varBarAlt <- sample(seq(265, 275, 0.1), 1)
+
+meanFimIng <- sample(seq(70, 80, 0.1), 1)
+varFimIng <- sample(seq(335, 345, 0.1), 1)
+
+meanFimAlt <- sample(seq(95, 105, 0.1), 1)
+varFimAlt <- sample(seq(245, 255, 0.1), 1)
+```
+Se han medido los valores de Barthel y FIM (dos escalas que miden dependencia) tanto al ingreso como al alta. La **media** ($\overline{X}$) y la **varianza** ($S^2$) han sido:
+
+* Barthel al ingreso, $\overline{X}$ =  `r meanBarIng`; $S^2$ = `r varBarIng`
+* Barthel al alta,$\overline{X}$ =  `r meanBarAlt`; $S^2$ = `r varBarAlt`
+* FIM al ingreso, $\overline{X}$ =  `r meanFimIng`; $S^2$ = `r varFimIng`
+* FIM al alta, $\overline{X}$ =  `r meanFimAlt`; $S^2$ = `r varFimAlt`
+
+
+<br>
+
+Calcule el coeficiente de variación (CV) de cada una de estas variables y diga ¿Cuál de las siguientes respuestas es <font size="5"> **FALSA** </font>?
+
+```{r echo = FALSE, results = "hide", comment=FALSE}
+BarIng <- round(sqrt(varBarIng)/meanBarIng*100, 1)
+BarAlt <- round(sqrt(varBarAlt)/meanBarAlt*100, 1)
+FimIng <- round(sqrt(varFimIng)/meanFimIng*100, 1)
+FimAlt <- round(sqrt(varFimAlt)/meanFimAlt*100, 1)
+x1 <- paste('El CV del "Barthel al ingreso" es = ', round(BarIng*1.5, 1), sep ='')
+x2 <- paste('El CV del "Barthel al alta" es = ', BarAlt, sep ='')
+x3 <- paste('El CV del "FIM al ingreso" es = ', FimIng, sep ='')
+x4 <- paste('El CV del "FIM al alta" es = ', FimAlt, sep ='')
+x5 <- 'Los valores de "Barthel al ingreso" presentan más variabilidad que los valores de "FIM al ingreso"'
+```
+
+
+Answerlist
+----------
+* `r x1`
+* `r x2`
+* `r x3`
+* `r x4`
+* `r x5`
+
+
+Solution
+========
+
+Recuérde que: $\text{s}^2 = \text{(DE)}^2$ y que por lo tanto $\text{DE}= \sqrt{\text{s}^2}$
+
+<br>
+
+Los coeficientes de variación (CV) son:
+
+
+.- Barthel ingreso, $\scriptsize \text{CV} = \dfrac{\sqrt{`r varBarIng`}}{`r meanBarIng`}$* 100 = `r BarIng`
+
+
+.- Barthel alta, $\scriptsize \text{CV} = \dfrac{\sqrt{`r varBarAlt`}}{`r meanBarAlt`}$* 100 = `r BarAlt`
+
+
+.- FIM ingreso, $\scriptsize \text{CV} = \dfrac{\sqrt{`r varFimIng`}}{`r meanFimIng`}$* 100 = `r FimIng`
+
+
+.- FIM alta, $\scriptsize \text{CV} = \dfrac{\sqrt{`r varFimAlt`}}{`r meanFimAlt`}$* 100 = `r FimAlt`
+
+
+La que presenta menor variabilidad (menor CV) es el FIM al alta.
+
+
+El Barthel al ingreso (CV = `r BarIng`) presenta más variabilidad que el FIM al ingreso (CV = `r FimIng`).
+
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: CoefVar
+extype: schoice
+exsolution: 10000
+exshuffle: 5

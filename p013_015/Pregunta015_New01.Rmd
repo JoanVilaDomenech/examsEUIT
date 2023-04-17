@@ -1,0 +1,115 @@
+Question
+========
+```{r echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+library(kableExtra)
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+xn <- sample(seq(233, 250, 1), 1)
+mydat <- data.frame(Ingreso = SimCon(sn=xn, smean = 30, ssd = 10, lolimit = 20, 70, 0))
+mydat$Alta <- SimCor(MyData = mydat, "Ingreso", meany = 85, 8, lolimit = 50, uplimit = 100, xycor = 0.8, ydec = 0)
+
+outLow <- function(xvari, xdec, noutliers, minvalue){
+    p25 <- round(quantile(xvari, 0.25,type=6), xdec)
+    p75 <- round(quantile(xvari, 0.75,type=6), xdec)
+    AIQ <- p75 - p25
+    lolimit <- p25 - 1.5 * AIQ
+    if (lolimit <= minvalue) print("No possible") else {
+    xxx <- data.frame(x1 = sample(seq(minvalue, lolimit, 1), noutliers, replace = TRUE), x2 = sort(xvari)[1:noutliers])
+    for ( i in 1:nrow(xxx)){
+      xvari <- ifelse(xvari==xxx$x2[i], xxx$x1[i], xvari)
+    }
+    xmin <- min(xvari)
+    xvar1 <- ifelse(xvari<lolimit, lolimit-1, xvari)
+    return(xvari)
+}
+}
+
+outUp <- function(xvari, xdec, noutliers, maxvalue){
+    p25 <- round(quantile(xvari, 0.25,type=6), xdec)
+    p75 <- round(quantile(xvari, 0.75,type=6), xdec)
+    AIQ <- p75 - p25
+    uplimit <- p75 + 1.5 * AIQ
+    if (uplimit >= maxvalue) print("No possible") else {
+    xxx <- data.frame(x1 = sample(seq(uplimit, maxvalue, 1), noutliers), x2 = sort(xvari)[(length(xvari)- (noutliers-1)):length(xvari)])
+    for ( i in 1:nrow(xxx)){
+      xvari <- ifelse(xvari==xxx$x2[i], xxx$x1[i], xvari)
+    }
+    xmax <- max(xvari)
+    xvar1 <- ifelse(xvari<uplimit, uplimit+1, xvari)
+     return(xvari)
+    }
+    }
+
+```
+Se ha medido los valores de Barthel (una escala de dependencia) al ingreso y al alta. A continuación encontrará algunos descriptivos de estas 2 variables y con ellos se ha dibujado la figura con los 2 *boxplot*.
+
+
+```{r boxplot, echo = FALSE, results = "hide", fig.height = 6, fig.width = 7, fig.path = "", fig.cap = ""}
+# par(mar = c(2.5, 2, 1, 0.5))
+par(mfrow= c(1,2), las= 1)
+mydat$Alta <- outLow(xvari = mydat$Alta, xdec = 0, noutliers = 3, minvalue = 0)
+boxplot(mydat$Ingreso, ylim = c(0, 100), main= "Barthel Ingreso")
+mydat$Ingreso <- outUp(xvari=mydat$Ingreso, xdec = 0, noutliers = 3, maxvalue = 100)
+boxplot(mydat$Alta, ylim = c(0, 100), main= "Barthel Alta")
+```
+
+```{r Mainresults, echo = FALSE, results = 'asis', fig.align='left'}
+library(kableExtra)
+toprint <- data.frame( Descriptor = c("Mediana", "Cuartil 1", "Cuartil 3", "Mínimo", "Máximo"), 
+Ingreso = c(median(mydat$Ingreso), quantile(mydat$Ingreso, 0.25, type=6), quantile(mydat$Ingreso, 0.75, type=6), min(mydat$Ingreso), max(mydat$Ingreso)), 
+Alta = c(median(mydat$Alta), quantile(mydat$Alta, 0.25, type=6), quantile(mydat$Alta, 0.75, type=6), min(mydat$Alta), max(mydat$Alta)))
+
+kbl(toprint) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+
+``` 
+
+¿Cuál de las siguientes respuestas es <font size="5"> **FALSA** </font>?
+
+```{r xxx, echo = FALSE, results = 'hide'}
+limdowAlta <- quantile(mydat$Alta, 0.25, type=6) - (quantile(mydat$Alta, 0.75, type=6) - quantile(mydat$Alta, 0.25, type=6))*1.5
+limupIng <- quantile(mydat$Ingreso, 0.75, type=6) + (quantile(mydat$Ingreso, 0.75, type=6) - quantile(mydat$Ingreso, 0.25, type=6))*1.5
+limdowIng <- quantile(mydat$Ingreso, 0.25, type=6) - (quantile(mydat$Ingreso, 0.75, type=6) - quantile(mydat$Ingreso, 0.25, type=6))*1.5
+xmax <- max(subset(mydat,  Ingreso<=limupIng)$Ingreso)
+```
+
+Answerlist
+----------
+* En los valores de Barthel al Alta el límite inferior para declarar *outliers* es = `r limdowAlta*1.3`
+* En los valores de Barthel al Ingreso el límite superior para declarar *outliers* es = `r limupIng`
+* Según la figura, una vez descartados los *outliers* el valor máximo de Barthel al Ingreso (recuerde, **"sin tener presente los *outliers*"**) es `r xmax`
+* El 50% central de los valores de Barthel al Ingreso se encuentra entre `r quantile(mydat$Ingreso, 0.25, type=6)` y `r quantile(mydat$Ingreso, 0.75, type=6)`
+* El 75% de lo valores de Barthel al Alta son <span>&le;</span> `r quantile(mydat$Alta, 0.75, type=6)`
+
+
+Solution
+========
+En los valores de Barthel al Alta el límite inferior para declarar *outliers* es =  `r quantile(mydat$Alta, 0.25, type=6)` - (`r quantile(mydat$Alta, 0.75, type=6)` - `r quantile(mydat$Alta, 0.25, type=6)`)*1.5 = `r limdowAlta`
+
+En los valores de Barthel al Ingreso el límite superior para declarar *outliers* es = `r quantile(mydat$Ingreso, 0.75, type=6)` + (`r quantile(mydat$Ingreso, 0.75, type=6)` - `r quantile(mydat$Ingreso, 0.25, type=6)`)*1.5  = `r limupIng`
+
+Interpretando la figura, una vez descartados los *outliers* el valor máximo de Barthel al Ingreso (recuerde, **"sin tener presente los *outliers*"**) el "bigote" superior se encuentra en  `r xmax`
+
+
+El 25% de los valores se encuentran por debajo del Cuartil-1 (`r quantile(mydat$Ingreso, 0.25, type=6)`). El 25% de los valores se encuentran por encima del Cuartil-3 (`r quantile(mydat$Ingreso, 0.75, type=6)`), por lo tanto el 50% central de los valores de Barthel al Ingreso se encuentra entre `r quantile(mydat$Ingreso, 0.25, type=6)` y `r quantile(mydat$Ingreso, 0.75, type=6)`
+
+El Cuartil-3 es `r quantile(mydat$Alta, 0.75, type=6)`, por lo tanto el 25% de los valores de Barthel al Alta son <span>&ge;</span> `r quantile(mydat$Alta, 0.75, type=6)` y el 75% son <span>&le;</span> `r quantile(mydat$Alta, 0.75, type=6)`
+
+
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: DescripNum
+extype: schoice
+exsolution: 10000
+exshuffle: 5

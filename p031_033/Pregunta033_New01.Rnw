@@ -1,0 +1,68 @@
+<<echo=FALSE, results=hide>>=
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+options(OutDec=",")
+na <- sample(seq(750, 800), 1)
+pa <- sample(seq(0.07, 0.1, 0.001), 1)
+nb <- sample(seq(900, 1000), 1)
+pb <- sample(seq(0.15, 0.2, 0.001), 1)
+lo <- abs(pa-pb) - 1.96 * sqrt((pa * (1-pa)/na) + (pb * (1-pb)/nb))
+up <- abs(pa-pb) + 1.96 * sqrt((pa * (1-pa)/na) + (pb * (1-pb)/nb))
+@
+
+\begin{question}
+\
+\\
+Para calcular el intervalo de confianza de la diferencia entre proporciones se ha aplicado la siguiente fórmula:
+\begin{displaymath}
+|\Sexpr{pa} - \Sexpr{pb}|  \pm  1,96 \sqrt{\frac{\Sexpr{pa} (1 - \Sexpr{pa})}{\Sexpr{na}}+ \frac{\Sexpr{pb} (1 - \Sexpr{pb})}{\Sexpr{nb}}} = \lbrace  \Sexpr{format(lo, digits=4, nsmall=4)}; \Sexpr{format(up, digits=4, nsmall=4)}\rbrace
+\end{displaymath}
+\
+\vspace{0.5cm}
+\
+\\
+¿Cu\'al de las siguientes respuestas es \textbf{\large FALSA}?
+
+
+\begin{answerlist}
+\item En el grupo en el que n= \Sexpr{nb}, los individuos que presentan la caracter\'istica de inter\'es son \Sexpr{round(nb*0.5)}
+\item El recorrido del intervalo de confianza no incluye el valor 0 (la $H_o$) por lo tanto las diferencias son estadísticamente significativas
+\item Se estima con un nivel de confianza del 95\% que la diferencia entre porcentajes debe ser alg\'un valor entre \Sexpr{format(lo*100, digits= 2, nsmal=2)} y \Sexpr{format(up*100, digits= 2, nsmal=2)}\%
+\item En el grupo en el que n= \Sexpr{na}, los individuos que presentan la caracter\'istica de inter\'es son \Sexpr{round(na*pa)}
+\item Para calcular el intervalo de confianza del 99\%, en lugar de multiplicar por 1,96 se deber\'ia multiplicar por 2,58
+\end{answerlist}
+
+\end{question}
+
+\begin{solution}
+\
+\\
+\begin{itemize}
+\item En el grupo en el que n= \Sexpr{nb}, los individuos que presentan la caracter\'istica de inter\'es son \Sexpr{round(nb*0.5)}\\
+Es FALSO ya que \Sexpr{nb} * \Sexpr{pb} = \Sexpr{round(nb*pb)}\\
+
+\item El recorrido del intervalo de confianza no incluye el valor 0 (la $H_o$) por lo tanto las diferencias son estadísticamente significativas\\
+Es Correcto: entre $\lbrace  \Sexpr{format(lo, digits = 4, nsmall=4)}; \Sexpr{format(up, digits = 4, nsmall=4)}\rbrace$ no se encuentra el valor 0 (la $H_o$) por lo tanto las diferencias son estadísticamente significativas\\
+
+\item Se estima con un nivel de confianza del 95\% que la diferencia entre porcentajes debe ser alg\'un valor entre \Sexpr{format(lo*100, digits= 2, nsmal=2)} y \Sexpr{format(up*100, digits= 2, nsmal=2)}\%\\
+Es Correcto.\\
+
+\item En el grupo en el que n= \Sexpr{na}, los individuos que presentan la caracter\'istica de inter\'es son \Sexpr{round(na*pa)}\\
+Es Correcto:  \Sexpr{na} * \Sexpr{pa} = \Sexpr{round(na*pa)}\\
+
+\item Para calcular el intervalo de confianza del 99\%, en lugar de multiplicar por 1,96 se deber\'ia multiplicar por 2,58\\
+Es Correcto.
+\end{itemize}
+
+\begin{answerlist}
+  \item Respuesta FALSA
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+\end{answerlist}
+\end{solution}
+
+\exname{Pregunta 33}
+\extype{schoice}
+\exsolution{10000}
+\exshuffle{5}

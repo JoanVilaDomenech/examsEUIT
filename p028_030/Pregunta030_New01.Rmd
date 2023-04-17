@@ -1,0 +1,254 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+options(scipen=999)
+library(Hmisc)
+xn <- sample(450:550, 1)
+nInt <- round(xn*0.51)  
+nCon <- xn - nInt
+
+nIntYes <- round(162/243 * nInt)
+nIntNo <- nInt - nIntYes
+
+nConYes <- round(63/252 * nCon)
+nConNo <- nCon - nConYes
+
+nYes <- nIntYes + nConYes
+nNo <- nIntNo + nConNo
+
+seq1 <- c(nIntYes, nIntNo, nInt, nConYes, nConNo, nCon, nYes, nNo, xn)
+seq2 <- c(nConYes, nConNo, nCon, nIntYes, nIntNo, nInt, nYes, nNo, xn)
+seq3 <- c(nIntYes, nConYes, nYes, nIntNo, nConNo, nNo, nInt, nCon, xn)
+seq4 <- c(nConNo, nIntNo, nNo, nConYes, nIntYes, nYes, nCon, nInt, xn)
+seq5 <- c(nIntNo, nIntYes, nInt, nConNo, nConYes, nCon, nNo, nYes, xn)
+
+tab1 <- get(sample(c("seq1", "seq2", "seq3", "seq4", "seq5"))[1])
+tab2 <- if(sum(tab1==seq1)==9) {get(sample(c("seq1", "seq3", "seq4", "seq5"))[1])} else 
+  {get(sample(c("seq1", "seq2", "seq3", "seq4", "seq5"))[1])}
+tab3 <- if(sum(tab1==seq1)==9 | sum(tab2==seq2)==9) {get(sample(c("seq1", "seq2", "seq4", "seq5"))[1])} else 
+  {get(sample(c("seq1", "seq2", "seq3", "seq4", "seq5"))[1])}
+tab4 <- if(sum(tab1==seq1)==9 | sum(tab2==seq2)==9 | sum(tab3==seq3)==9 ){get(sample(c("seq1", "seq2", "seq3", "seq5"))[1])} else 
+  {get(sample(c("seq1", "seq2", "seq3", "seq4", "seq5"))[1])}
+tab5 <- if(sum(tab1==seq1)==9 | sum(tab2==seq2)==9 | sum(tab3==seq3)==9 | sum(tab4==seq4)==9){get(sample(c("seq1", "seq2", "seq3", "seq4"))[1])} else get("seq5")
+
+tabok <- ifelse(sum(tab1==seq1)==9, 1, ifelse(sum(tab2==seq2)==9, 2,
+          ifelse(sum(tab3==seq3)==9, 3, ifelse(sum(tab4==seq4)==9, 4,
+          ifelse(sum(tab5==seq5)==9, 5, NA)))))
+
+tabNook <- seq(1,5)[1:5%nin%tabok]
+
+```
+Se aleatorizaron `r xn` participantes con dolor crónico maligno a dos grupos. Uno formado por `r nInt` participantes recibió masaje y consejos para controlar el dolor. El otro grupo (grupo control) estaba formado por `r nCon` participantes y sólo recibió consejo.
+
+Se analizó la mejora del dolor: 1 hora después del tratamiento `r nIntYes` personas habían mejorado $>$ 20% en el grupo Masaje y sólo `r nConYes` en el grupo control. 
+
+¿Cuál de las siguientes 5 tablas es <font size="5"> <span style="color: red;">**CORRECTA**</span></font>?
+
+
+<table> 
+  <caption>**Tabla 1**</caption> 
+  <tr> 
+    <td>&emsp;&emsp;</td> 
+    <td colspan="2">**Mejora dolor más del 20%** &emsp; &emsp;</td> 
+    <td>&emsp;&emsp;</td> 
+  </tr> 
+  <tr> 
+    <td>&emsp;</td> 
+    <td>**Sí**</td>
+    <td>**No**</td>
+    <td>**TOTAL**</td>
+  </tr>
+  <tr> 
+    <td>**Grupo Masaje** &emsp;</td> 
+    <td>`r tab1[1]`</td>
+    <td>`r tab1[2]`</td>
+    <td>`r tab1[3]`</td>
+  </tr>
+  <tr> 
+    <td>**Grupo Control** &emsp;</td> 
+    <td>`r tab1[4]`</td>
+    <td>`r tab1[5]`</td>
+    <td>`r tab1[6]`</td>
+  </tr>
+  <tr> 
+    <td>**TOTAL** &emsp;</td> 
+    <td>`r tab1[7]`</td>
+    <td>`r tab1[8]`</td>
+    <td>`r tab1[9]`</td>
+  </tr>
+</table>
+
+-----
+
+<table> 
+  <caption>**Tabla 2**</caption> 
+  <tr> 
+    <td>&emsp;&emsp;</td> 
+    <td colspan="2">**Mejora dolor más del 20%** &emsp; &emsp;</td> 
+    <td>&emsp;&emsp;</td> 
+  </tr> 
+  <tr> 
+    <td>&emsp;</td> 
+    <td>**Sí**</td>
+    <td>**No**</td>
+    <td>**TOTAL**</td>
+  </tr>
+  <tr> 
+    <td>**Grupo Control** &emsp;</td> 
+    <td>`r tab2[1]`</td>
+    <td>`r tab2[2]`</td>
+    <td>`r tab2[3]`</td>
+  </tr>
+  <tr> 
+    <td>**Grupo Masaje** &emsp;</td> 
+    <td>`r tab2[4]`</td>
+    <td>`r tab2[5]`</td>
+    <td>`r tab2[6]`</td>
+  </tr>
+  <tr> 
+    <td>**TOTAL** &emsp;</td> 
+    <td>`r tab2[7]`</td>
+    <td>`r tab2[8]`</td>
+    <td>`r tab2[9]`</td>
+  </tr>
+</table>
+
+-----
+
+<table> 
+  <caption>**Tabla 3**</caption> 
+  <tr> 
+    <td>&emsp;&emsp;</td> 
+    <td colspan="2">&emsp;&emsp;**Grupo** &emsp; &emsp;</td> 
+    <td>&emsp;&emsp;</td> 
+  </tr> 
+  <tr> 
+    <td>&emsp;</td> 
+    <td>**Masaje**</td>
+    <td>**Control**</td>
+    <td>**TOTAL**</td>
+  </tr>
+  <tr> 
+    <td>**Sí mejora dolor más del 20%** &emsp;</td> 
+    <td>`r tab3[1]`</td>
+    <td>`r tab3[2]`</td>
+    <td>`r tab3[3]`</td>
+  </tr>
+  <tr> 
+    <td>**No mejora dolor más del 20%** &emsp;</td> 
+    <td>`r tab3[4]`</td>
+    <td>`r tab3[5]`</td>
+    <td>`r tab3[6]`</td>
+  </tr>
+  <tr> 
+    <td>**TOTAL** &emsp;</td> 
+    <td>`r tab3[7]`</td>
+    <td>`r tab3[8]`</td>
+    <td>`r tab3[9]`</td>
+  </tr>
+</table>
+
+-----
+
+<table> 
+  <caption>**Tabla 4**</caption> 
+  <tr> 
+    <td>&emsp;&emsp;</td> 
+    <td colspan="2">&emsp;&emsp;**Grupo** &emsp; &emsp;</td> 
+    <td>&emsp;&emsp;</td> 
+  </tr> 
+  <tr> 
+    <td>&emsp;</td> 
+    <td>**Control**</td>
+    <td>**Masaje**</td>
+    <td>**TOTAL**</td>
+  </tr>
+  <tr> 
+    <td>**No mejora dolor más del 20%** &emsp;</td> 
+    <td>`r tab4[1]`</td>
+    <td>`r tab4[2]`</td>
+    <td>`r tab4[3]`</td>
+  </tr>
+  <tr> 
+    <td>**Sí mejora dolor más del 20%** &emsp;</td> 
+    <td>`r tab4[4]`</td>
+    <td>`r tab4[5]`</td>
+    <td>`r tab4[6]`</td>
+  </tr>
+  <tr> 
+    <td>**TOTAL** &emsp;</td> 
+    <td>`r tab4[7]`</td>
+    <td>`r tab4[8]`</td>
+    <td>`r tab4[9]`</td>
+  </tr>
+</table>
+
+-----
+
+<table> 
+  <caption>**Tabla 5**</caption> 
+  <tr> 
+    <td>&emsp;&emsp;</td> 
+    <td colspan="2">**Mejora dolor más del 20%** &emsp; &emsp;</td> 
+    <td>&emsp;&emsp;</td> 
+  </tr> 
+  <tr> 
+    <td>&emsp;</td> 
+    <td>**No**</td>
+    <td>**Sí**</td>
+    <td>**TOTAL**</td>
+  </tr>
+  <tr> 
+    <td>**Grupo Masaje** &emsp;</td> 
+    <td>`r tab5[1]`</td>
+    <td>`r tab5[2]`</td>
+    <td>`r tab5[3]`</td>
+  </tr>
+  <tr> 
+    <td>**Grupo Control** &emsp;</td> 
+    <td>`r tab5[4]`</td>
+    <td>`r tab5[5]`</td>
+    <td>`r tab5[6]`</td>
+  </tr>
+  <tr> 
+    <td>**TOTAL** &emsp;</td> 
+    <td>`r tab5[7]`</td>
+    <td>`r tab5[8]`</td>
+    <td>`r tab5[9]`</td>
+  </tr>
+</table>
+
+-----
+
+Answerlist
+----------
+* La Tabla `r tabok`
+* La Tabla `r tabNook[1]`
+* La Tabla `r tabNook[2]`
+* La Tabla `r tabNook[3]`
+* La Tabla `r tabNook[4]`
+
+
+Solution
+========
+La tabla correcta es la Tabla `r tabok`
+
+
+
+Answerlist
+----------
+* Respuesta Correcta
+* Respuesta Falsa
+* Respuesta Falsa
+* Respuesta Falsa
+* Respuesta Falsa
+
+
+
+Meta-information
+================
+exname: XXXXX
+extype: schoice
+exsolution: 10000
+exshuffle: 5

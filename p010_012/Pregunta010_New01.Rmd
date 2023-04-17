@@ -1,0 +1,123 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+xn <- sample(seq(20,25), 1)
+dat <- data.frame(id=seq(1, xn))
+dat$semanas <- SimCon(xn,8,7,1,74,0)
+
+c25 <- round(25 * (nrow(dat)+1) / 100, 2)
+x1 <- dat$semanas[order(dat$semanas)][trunc(c25)]
+x2 <- dat$semanas[order(dat$semanas)][trunc(c25)+1]
+p25 <- x1 +(x2 -x1) * (c25 - trunc(c25))
+xp25 <- p25 + 2
+yp25 <- p25 + 4
+
+c75 <- round(75 * (nrow(dat)+1) / 100, 2)
+x1 <- dat$semanas[order(dat$semanas)][trunc(c75)]
+x2 <- dat$semanas[order(dat$semanas)][trunc(c75)+1]
+p75 <- x1 +(x2 -x1) * (c75 - trunc(c75))
+xp75 <- p75 + 2
+yp75 <- p75 + 4
+``` 
+Se ha medido las semanas que tarda en curarse una úlcera varicosa a `r nrow(dat)` pacientes de una consulta de enfermeria. Los valores se muestran en la siguiente tabla:
+
+<p style="text-align: center;">Tabla 1: Semanas hasta la curación</p>
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+library(kableExtra)
+dat %>%
+  kbl(caption = "", , align = "c") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+```
+
+<br>
+
+Calcule el percentil 25 (P25) y el percentil 75 (P75) e indique ¿Cuál de las siguientes respuestas es <font size="5"> **CORRECTA** </font>?
+
+
+Answerlist
+----------
+* P25 = `r p25`,  &emsp; P75 = `r p75`
+* P25 = `r yp25`,  &emsp;P75 = `r yp75`
+* P25 = `r p25`,  &emsp; P75 = `r xp75`
+* P25 = `r xp25`, &emsp; P75 = `r p75`
+* P25 = `r xp25`, &emsp; P75 = `r xp75`
+
+
+Solution
+========
+Para calcular los percentiles primero se tienen que ordenar los valores. A continuación se muestran los valores ordenados:
+
+<p style="text-align: center;">Semanas hasta la curación. Valores ordenados</p>
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+dat <- dat[order(dat$semanas), ]
+dat$orden <- seq(1, nrow(dat))
+dat <- dat[, c("id", "orden", "semanas")]
+dat %>%
+  kbl(caption = "", , align = "c", row.names = F) %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+```
+
+
+
+Para obtener el percentil 25 (Cuartil 1) primero se debe calcular el valor 'c':
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+c1 <- round(25 * (nrow(dat)+1) / 100, 2)
+```
+
+**c** = $\dfrac{25 * (`r nrow(dat)`+1)}{100} = `r format(c1, digits=4)`$
+
+La parte entera de esta cifra (`r floor(c1)`) indica que el valor del percentil 25 estará entre la fila `r floor(c1)` y la `r floor(c1)+1`. 
+
+* En la fila `r floor(c1)` hay el valor <span style="color: red;"> `r dat$semanas[floor(c1)]`</span>    
+* En la fila `r floor(c1)+1` hay el valor <span style="color: blue;"> `r dat$semanas[floor(c1)+1]`</span> 
+
+Para saber en que punto está entre <span style="color: red;"> `r dat$semanas[floor(c1)]`</span> (valor de semanas en la fila `r floor(c1)`) y  <span style="color: blue;"> `r dat$semanas[floor(c1)+1]`</span> (valor de semanas en la fila `r floor(c1)+1`) , se ha de añadir a <span style="color: red;"> `r dat$semanas[floor(c1)]`</span> la proporción que nos indica la parte decimal de 'c' (`r c1-floor(c1)`). Concretamente:
+
+
+$P25=$<span style="color: red;"> $`r dat[floor(c1), "semanas"]`$</span> $+$<span style="color: blue;">$(`r dat[floor(c1)+1, "semanas"]`$</span> $-$<span style="color: red;">$`r dat[floor(c1), "semanas"]`$</span>$) * `r c1- floor(c1)`= `r p25`$
+
+
+El percentil 25 de la variable **semanas** que tarda en curarse la úlcera es `r p25`. Se interpreta como que un 25\% de úlceras tardan en curarse <span>&le;</span> `r p25` semanas y un 75\% tardan <span>&ge;</span> `r p25`.
+
+<br>
+<br>
+
+De forma similar, para obtener el percentil 75 (Cuartil 3) se calcula el valor 'c':
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+c3 <- round(75 * (nrow(dat)+1) / 100, 3)
+```
+
+**c** = $\dfrac{75 * (`r nrow(dat)`+1)}{100} = `r format(c3, digits=4)`$
+
+La parte entera de esta cifra (`r floor(c3)`) indica que el valor del percentil 25 estará entre la fila `r floor(c3)` y la `r floor(c3)+1`. 
+
+* En la fila `r floor(c3)` hay el valor <span style="color: red;"> `r dat$semanas[floor(c3)]`</span>    
+* En la fila `r floor(c3)+1` hay el valor <span style="color: blue;"> `r dat$semanas[floor(c3)+1]`</span> 
+
+Para saber en que punto está entre <span style="color: red;"> `r dat$semanas[floor(c3)]`</span> (valor de semanas en la fila `r floor(c3)`) y  <span style="color: blue;"> `r dat$semanas[floor(c3)+1]`</span> (valor de semanas en la fila `r floor(c3)+1`) , se ha de añadir a <span style="color: red;"> `r dat$semanas[floor(c3)]`</span> la proporción que nos indica la parte decimal de 'c' (`r c3-floor(c3)`). Concretamente:
+
+
+$P75=$<span style="color: red;"> $`r dat[floor(c3), "semanas"]`$</span> $+$<span style="color: blue;">$(`r dat[floor(c3)+1, "semanas"]`$</span> $-$<span style="color: red;">$`r dat[floor(c3), "semanas"]`$</span>$) * `r c3- floor(c3)`= `r p75`$
+
+
+El percentil 75 de la variable **semanas** que tarda en curarse la úlcera es `r p75`. Se interpreta como que un 75\% de úlceras tardan en curarse <span>&le;</span> `r p75` semanas y un 25\% tardan <span>&ge;</span> `r p75`.
+
+ 
+Answerlist
+----------
+* Respuesta Correcta
+* Respuesta FALSA
+* Respuesta FALSA
+* Respuesta FALSA
+* Respuesta FALSA
+
+
+
+Meta-information
+================
+exname: Percentiles
+extype: schoice
+exsolution: 10000
+exshuffle: 5

@@ -1,0 +1,114 @@
+Question
+========
+Observe el siguiente ejemplo de base datos:
+<br>
+
+<br>
+
+```{r data generation, echo = FALSE, results = "hide"}
+library(kableExtra)
+# dt <- mtcars[1:5, 1:6]
+# kbl(dt)
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+xn <- 7
+ID <-  seq(1, xn) 
+ESTUDIOS <-  sample(c(seq(1,5), sample(rep(seq(1, 5), xn), xn-5)))
+EDAD <- SimCon(xn,55,12,35,74,0)
+SEXO <- sample(rep(seq(0, 1), 10), xn)
+FC <- SimCon(7,65,15,40,80,0)
+
+xHTA <- data.frame(HTA=c(1, 1, 0, sample(rep(seq(0, 1), 10), xn-3)))
+xHTA1 <-subset(xHTA, HTA==1)
+xHTA0 <-subset(xHTA, HTA==0)
+sample(rep(c(0,1), nrow(xHTA1)), nrow(xHTA1))
+xHTA1$HTATX <- sample(rep(c(0,1), nrow(xHTA1)), nrow(xHTA1))
+xHTA0$HTATX <- 0
+xHTA <- rbind(xHTA1, xHTA0)
+xHTA <- xHTA[order(sample(as.numeric(rownames(xHTA)))), ]
+HTA <- xHTA$HTA
+HTATX <- xHTA$HTATX
+IMCBA <- SimCon(xn,25,4.5,18,35,1)
+IMC3M <- SimCor(data.frame(IMCBA), "IMCBA", mean(IMCBA), sd(IMCBA), 18, 35,0.75, 1)
+
+mydat <- data.frame(ID, ESTUDIOS, EDAD, SEXO, FC, HTA, HTATX, IMCBA, IMC3M)
+mydat <- rbind(mydat[1:nrow(mydat)-1, ], data.frame(ID= rep(".", 3), ESTUDIOS= rep(".", 3), EDAD=rep(".", 3), SEXO=rep(".", 3), 
+           FC = rep(".", 3), HTA= rep(".", 3), HTATX= rep(".", 3), IMCBA= rep(".", 3), 
+           IMC3M= rep(".", 3)), 
+      mydat[nrow(mydat), ])
+
+mydat$ID[nrow(mydat)] <- "n"
+```
+Tabla 1: Ejemplo de datos (algunas variables) recogidos en un estudio sobre obesidad
+<br>
+
+```{r hola, echo = FALSE, results = 'markup'}
+mydat %>%
+  kbl(, row.names=FALSE) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+```
+Donde:
+
+* ID: Número consecutivo identificador del participante
+* ESTUDIOS: Máximo nivel de formación alcanzado
+  + 1 = No tiene estudio reglados / Primaria
+  + 2 = Secundaria
+  + 3 = Bachillerato / Ciclo formativo de primer grado 
+  + 4 = Ciclo formativo de segundo grado
+  + 5 = Universitario
+* EDAD: Edad del participante
+* SEXO: Sexo del participante
+  + 0 = mujer
+  + 1 = hombre
+* FC: Frecuencia cardíaca
+* HTA: Hipertensión
+  + 0 = No
+  + 1 = Si
+* HTATX: Toma tratamiento antihipertensivo
+  + 0 = No
+  + 1 = Si
+* IMCBA: Índice de Masa Corporal Basal
+* IMC3M: Índice de Masa Corporal a los 3 meses de tratamiento
+
+¿Cuál de las siguientes respuestas es <font size="5"> **FALSA** </font>?
+
+
+Answerlist
+----------
+* La variable **ESTUDIOS** es cualitativa (o categórica) pero No ordinal
+* La variable **SEXO** es cualitativa (o categórica) dicotómica
+* Las variables **EDAD** y **IMCBA**  son cuantitativas (o numéricas)
+* Las variables **IMCBA** y **IMC3M** son cuantitativas (o numéricas) y, ya que miden "lo mismo'' (Índice de Masa Corporal) en dos situaciones diferentes (Basal y tras 3 meses de tratamiento), podrían considerarse datos apareados
+* En la variable **ID** el símbolo ``n'' indica el número de pacientes
+* Cada linea es un registro. Si en un registro **HTA** = 0, **HTATX** tiene que ser = 0
+* Las variables **FC** y **IMC3M** son cuantitativas (o numéricas)
+* La variable **HTA** es cualitativa (o categórica) dicotómica
+* La variable  **HTATX** es cualitativa (o categórica) dicotómica
+
+
+
+Solution
+========
+* **SEXO**, **HTA**, **HTATX** sólo tienen dos categorías, por lo tanto son dicotómicas y categóricas
+* **EDAD**, **FC**, **IMCBA** y **IMC3M** son numéricas
+* **IMCBA** y **IMC3M** ya que miden lo mismo (IMC) en el mismo individuo en dos situaciones diferentes (Basal y 3 meses), son datos apareados
+* Claramente el nivel de estudios (**ESTUDIOS**) se puede ordenar y por lo tanto es ordinal 
+* El símbolo 'n' se utiliza para indicar el tamaño de muestra
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+Meta-information
+================
+exname: Tipo Variables
+extype: schoice
+exsolution: 100000000
+exshuffle: 5

@@ -1,0 +1,81 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+xn <- sample(c(18, 20, 22)-1, 1)
+xmean <- sample(seq(60, 70, by = 0.1), 1)
+xsd <-  xmean *0.20
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+dat <- SimCon(sn= xn, smean= xmean, ssd= xsd, lolimi = 40, uplimit= 99, sdec= 0)
+
+# adding values to have a mode
+tbdat <- table(dat)
+toberep <- sample(as.numeric(names(tbdat[tbdat==max(table(dat))])), 1)
+dat <- sample(c(dat, rep(toberep, 1)))
+options(OutDec= ",")
+``` 
+Se han medido el peso en kg a una muestra de `r length(dat)` individuos, los valores obtenidos son:
+
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+knitr::kable(paste(dat, collapse = ", "), col.names = NULL)
+``` 
+
+¿Cuál de las siguientes respuestas es <font size="5"> **FALSA** </font>?
+
+
+Answerlist
+----------
+* La mediana = `r round(median(dat), 1)+1.5`
+* La media = `r round(mean(dat), 1)`
+* La moda = `r names(which.max(table(dat)))`
+* El valor de la mediana nos indica que el 50\% de individuos tienen valores por debajo de mediana y el 50\% por encima
+* Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n'') se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+
+Solution
+========
+* Para obtener la media se debe calcular:
+
+ $\scriptsize \overline{\textrm{X}} = \dfrac{`r dat[1]` + `r dat[2]` + \cdots + `r dat[length(dat)-1]` + `r dat[length(dat)]`}{`r length(dat)`} = `r round(mean(dat), 1)`$ 
+
+```{r echo = FALSE, results = 'hide', comment=FALSE}
+xdat <- dat[order(dat)]
+xdat <- t(data.frame(Posición= seq(1, length(xdat)), Valor = xdat))
+``` 
+<br>
+
+* Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición `r length(dat)/2` y `r (length(dat)/2)+1`:
+
+
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+knitr::kable(xdat)
+``` 
+
+Md = $\scriptsize \dfrac{`r xdat[2, length(dat)/2]` + `r xdat[2, (length(dat)/2)+1]`}{2}$ = `r median(dat)`
+
+<br>
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+xrep <- max(table(dat))
+```
+
+
+* La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el `r toberep` (se repite `r xrep` veces). 
+
+<br>   
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: Descriptives numerical
+extype: schoice
+exsolution: 10000
+exshuffle: 5

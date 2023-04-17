@@ -1,0 +1,115 @@
+<<echo=FALSE, results=hide>>=
+options(OutDec=",")
+library(knitr)
+
+ORok <-  9.1
+wOR <-  format(ORok*(1+sample(20:24, 1)/100), digits= 1, nsmall= 1 )
+xOR <-  format(ORok*(1+sample(25:29, 1)/100), digits= 1, nsmall= 1 )
+yOR <-  format(ORok*(1-sample(20:24, 1)/100), digits= 1, nsmall= 1 )
+zOR <-  format(ORok*(1-sample(25:50, 1)/100), digits= 1, nsmall= 1 )
+@
+
+\begin{question}
+\
+\\
+El primer estudio que relacionó el fumar con el cáncer de pulmón lo realizó Sir Austin Bradford Hill (junto con  Sir Richard Doll) en el año 1947\\
+
+
+<<echo=FALSE, results=hide>>=
+include_supplement("BradfordHill.PNG")
+@
+ 
+\begin{figure}[H]
+\begin{center}
+\setkeys{Gin}{width=.1\textwidth}
+\includegraphics[]{BradfordHill.PNG}\\
+\end{center}
+\end{figure}
+
+En este estudio comparó el hábito de fumar en 1357 hombres diagnosticados de cáncer de pulmón (Casos) y en 1357 hombres de la misma edad y estilos de vida similares, pero que no tenían cáncer de pulmón (Controles) . Los resultados se muestran en la siguiente tabla:
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lccc}
+\hline 
+ & Casos & Controles & Total\\ 
+\hline 
+Fumadores & 1350 & 1296 & 2646 \\ 
+ & (99.5\%) & (95.5\%) & (97.5\%) \\ 
+No fumadores & 7 & 61 & 68 \\ 
+\hline 
+Total & 1357 & 1357 & 2714 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\end{table}
+\
+\\
+
+Observe que en el año 1947 había un porcentaje de hombres fumadores muy alto.\\
+\
+\\
+Calcule el Odds Ratio (OR) y diga,\\
+\
+\\
+¿Cu\'al de las siguientes respuestas es \textbf{\large CORRECTA}?
+
+
+\begin{answerlist}
+  \item \Sexpr{ORok}
+  \item \Sexpr{wOR}
+  \item \Sexpr{xOR}
+  \item \Sexpr{yOR}
+  \item \Sexpr{zOR}
+\end{answerlist}
+
+\end{question}
+
+\begin{solution}
+\
+\\
+\
+\\
+
+Para calcular el OR (y el Riesgo Relativo) no es imprescindible, como se ha explicado en clase, reordenar la tabla de forma que en las columnas se encuentre lo más parecido a ``Resultado'' o ``Enfermedad'' y en las filas lo mas parecido a ``Exposición'', si no que lo importante es saber donde se encuentra de la tabla cada valor que hay que utilizar. \\
+Sin embargo, tener ordenada la tabla de esta forma, facilita encontrar los valores adecuados. Concretamente:
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lrccc}
+\hline 
+& & \multicolumn{2}{c}{Resultado/Enfermedad} &\\
+& & Casos & Controles & Total\\ 
+\hline 
+& Fumadores & a & b & a + b \\ 
+Exposici\'on & &  & & \\ 
+& No fumadores & c & d & c + d \\ 
+\hline 
+& Total & a + c & b + d & a + b + c + d  \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\end{table}
+
+Obsérvese que la tabla estaba ordenada de la forma esperada. En esta situaci\'on: \\
+\
+\\
+${
+\begin{eqnarray}
+\text{OR} = \frac{\frac{a}{c}}{\frac{b}{d} } = \frac{\frac{1350}{7}}{\frac{1296}{61} } = 9,1
+\end{eqnarray}
+}$
+
+\begin{answerlist}
+  \item Respuesta CORRECTA
+  \item Respuesta Falsa
+  \item Respuesta Falsa
+  \item Respuesta Falsa
+  \item Respuesta Falsa
+\end{answerlist}
+\end{solution}
+
+\exname{Pregunta 035}
+\extype{schoice}
+\exsolution{10000}
+\exshuffle{5}

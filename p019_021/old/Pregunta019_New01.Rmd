@@ -1,0 +1,205 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+options(scipen=999)
+xn <- sample(c(9,12,15), 1)
+weight <- SimCon(xn, 3.200, 0.800, 2.200, 3.900, 2)
+xxx <- sample(seq(1,xn)/10)
+for (i in 1:length(weight)){
+  weight[i] <- ifelse(weight[i]==3.9, weight[i]-xxx[i], weight[i])
+  weight[i] <- ifelse(weight[i]==2.20, weight[i]+xxx[i], weight[i])
+}
+weight <- data.frame(id=seq(1, length(weight)), peso=round(weight, 2))
+# asseguro almenys un repetit
+weight$peso[4] <- weight$peso[5]
+
+```
+Se ha medido el peso a `r xn` recien nacidos que participaron en un estudio. Los valores se muestran en la siguiente tabla:
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+library(kableExtra)
+weight %>%
+  kbl(caption = "") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+``` 
+
+La $\overline{\text{X}}$ de la variable peso es `r round(mean(weight$peso), 5)` y la DE es `r round(sd(weight$peso), 5)`.
+
+**NOTA**: se utilizan muchos decimales para la $\overline{\text{X}}$ y la **DE**, para evitar dudas debido al redondeo en los cálculos de esta pregunta.
+
+En la siguiente tabla se muestra los valores que son necesarios calcular para realizar la prueba de ``Kolmogorov-Smirnov'' (K-S) que permita decidir si se puede asumir que los valores de **peso** provienen de una población que sigue una distribución normal. 
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+weight <- data.frame(peso=weight[
+  order(weight$peso), -1])
+weight$zpeso <- round(with(weight, (peso-mean(peso))/sd(peso)), 2)
+for (i in 1:nrow(weight)){
+  weight$observ[i] <- round(sum(weight$peso<=weight$peso[i])/nrow(weight), 3)
+}
+weight$expec <- round(pnorm(weight$zpeso), 3)
+weight$dif1 <- with(weight, observ- expec)
+weight$dif2 <- NA
+for (i in 2:nrow(weight)){
+  weight$dif2[i] <-  weight$observ[i-1] -  weight$expec[i]  
+}
+weight$dif2[1] <- 0-  weight$expec[1] 
+
+weight2 <- weight
+xa <- 3
+xb <- 4
+xc <- 5
+xd <- 8
+weight2[,2] <- format(weight2[,2],digits=3,nsmall=2)
+weight2[xa,2] <- "Valor 1"
+weight2[,3] <- format(weight2[,3],digits=3,nsmall=3)
+weight2[xb,3] <- "Valor 2"
+weight2[,4] <- format(weight2[,4],digits=3,nsmall=3)
+weight2[xc,4] <- "Valor 3"
+weight2[,5] <- format(weight2[,5],digits=3,nsmall=3)
+weight2[,6] <- format(weight2[,6],digits=3,nsmall=3)
+weight2[xd,6] <- "Valor 4"
+```
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+weight2 %>%
+  kbl(caption = "",  align=rep('c', 6)) %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+``` 
+Observe que faltan algunos valores ¿Cuál de las siguientes respuestas es <font size="5"> **FALSA**</font>?
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+xmax <- max(abs(c(weight$dif1, weight$dif2)))
+```
+
+Answerlist
+----------
+* Para realizar la prueba de K-S se ha de calcular "el máximo de las diferencias, en valor absoluto" (max ($|dif|$)). En este ejercicio "el máximo de las diferencias, en valor absoluto" es = `r round(xmax/1.5, 3)`. 
+* Valor 1 = `r format(weight[3,2],digits=3,nsmall=2)`
+* Valor 2 = `r format(weight[4,3],digits=3,nsmall=3)` 
+* Valor 3 = `r format(weight[5,4],digits=3,nsmall=3)`
+* Valor 4 = `r format(weight[7,6],digits=3,nsmall=3)`
+
+Solution
+========
+La primera columna (**peso**) son los valores de peso ordenados de mayor a menor.
+ 
+----
+
+La segunda columna (**zpeso**) son los valores de peso *estandarizados*. Se le pide calcular ($zx_{ `r xa`}$). Éste se obtiene:
+
+$\scriptsize \text{zx}_{`r xa`} = \dfrac{\text{x}_{ `r xa`}-\overline{\text{X}}}{\text{DE}} = \dfrac{ `r weight[xa, "peso"]` -  `r round(mean(weight[, "peso"]), 5)`}{ `r round(sd(weight[, "peso"]), 5)`} =  `r weight[xa, "zpeso"]`$
+
+----
+
+La tercera columna (**observ**) es la proporción de individuos que tiene valores de peso <span>&le;</span> que el peso de la fila. El valor de $peso_{`r xb`}$ es `r weight$peso[xb]` años. Hay `r sum(weight$peso<=weight$peso[xb])` individuos que tienen peso <span>&le;</span> `r weight$peso[xb]`. Por lo tanto la proporción = $\scriptsize \dfrac{`r sum(weight[, "peso"]<=weight[xb, "peso"])`}{`r nrow(weight)`} = `r weight[xb, "observ"]`$
+
+----
+
+La cuarta columna (**expec**) se obtiene, utilizando la tabla de la distribución normal, respondiendo a: Si una variable estandarizada siguiera una distribución normal ¿que proporción de individuos tendría valores <span>&le;</span> al valor que hay en la columna (**zpeso**)?
+
+La figura al final del documento ilustra lo que se acaba de explicar. En esta figura, note que la proporción de individuos que tendría valores <span>&le;</span>  `r weight$zpeso[xc]` es `r weight$expec[xc]`.
+
+----
+
+La quinta columna (**dif1**) se obtiene calculando la diferencia entre la proporción acumulada *observada* (**observ**) y la proporción acumulada *esperada* (**expec**) si siguiera una distribución normal. Por ejemplo, para el peso `r weight$peso[2]`: 
+
+**dif1** =`r weight[2, "observ"]` - `r weight[2, "expec"]` = `r weight[2, "dif1"]`
+
+----
+
+La sexta columna (**dif2**) se obtiene de forma muy similar, pero en lugar de utilizar la proporción acumulada *observada* de la misma fila, la operación se hace con la de la fila anterior. Por ejemplo, para el $peso_{`r xd`}$ :  
+
+
+**dif2** = `r weight$observ[xd-1]` - `r weight$expec[xd]` = `r weight$dif2[xd]`
+
+----
+
+Una vez realizados todos los cálculos de la tabla, se debe calcular un valor, llámese "*z*", que es el resultado de aplicar la fórmula: 
+
+$\text{z} = \sqrt{\text{n}}* \text{máx}(\mid dif \mid)$
+
+Dónde **máx ($|dif|$)** es el máximo, en valor *absoluto*, de las columnas **dif1** y **dif2**. Concretamente, en este ejemplo, máx ($|dif|$) = `r xmax`.
+
+Para calcular "z":
+
+*z* = $\sqrt{\text{`r nrow(weight)`}}* `r xmax` = `r round(sqrt(nrow(weight))* xmax, 3)`$
+
+Una vez obtenido este valor "z", se compara en la siguiente tabla:
+
+```{r, echo=FALSE, results='hide'}
+include_supplement("tabKS.png")
+```
+
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("tabKS.png")
+```
+
+Los valores de "z" <span>&ge;</span> 1,3581 conducen a la conclusión que asumir que la muestra de individuos se ha obtenido de una población que sigue una distribución normal es poco probable.
+
+Esta *poca probabilidad* la indica la fila **Nivel de significación**. Obsérvese que los valores <span>&ge;</span> 1,3581 tienen una probabilidad <span>&le;</span>  0,05, los valores <span>&ge;</span> 1,5174 tienen una probabilidad <span>&le;</span>  0,02,  los valores <span>&ge;</span> 1,6276 tienen una probabilidad <span>&le;</span>  0,01, etc.
+
+Tradicionalmente el punto de corte para decidir si una situación es *poco* probable se ha situado en probabilidades <span>&le;</span> 0,05. Por lo tanto los valores de *z* <span>&ge;</span> 1,3581 nos llevaran a la conclusión que lo que se está midiendo (en el ejemplo: peso) es poco probable que se haya obtenido de una una población que sigue una distribuación normal.
+
+Los valores de *z* $<$ 1,3581 nos llevaran a la conclusión que nada se opone a que lo que se está midiendo (en el ejemplo: peso) se haya obtenido de una una población que sigue una distribución normal. 
+
+El valor de *z* obtenido en este ejercicio ha sido de `r format(round(sqrt(nrow(weight))* xmax, 3),digits=3,nsmall=3)`, por lo tanto la conclusión es: ***no hay evidencias en contra de que los valores de peso se han obtenido de una población que sigue una distribución normal***.
+
+-----
+
+Explicación gráfica de los valores **expec** que se muestran en la tabla de los cálculos de la prueba de KS:
+
+
+```{r boxplot, echo = FALSE, results = "hide", fig.height = 10, fig.width = 10, fig.path = "", fig.cap = ""}
+mean.a <- 0
+sd.a <- 1
+xlim=c(from=mean.a-3*sd.a,mean.a+3*sd.a)
+n=500
+
+xcol <- ceiling(length(weight$zpeso)/3)
+par(mar= c(4, 2, 2, 2) + 0.1, mfrow = c(xcol,3))
+
+
+for (i in 1:length(weight$zpeso)){
+  options(OutDec=".")
+  point <- weight$zpeso[i]
+  # x <- paste("curve(dnorm(x,mean=mean.a,sd=sd.a),xlim=xlim,ylab=\"\", xlab=expression(zpeso[", i, "]==",point,") ,cex=3,axes=F)",sep="")
+  # xcurve <- eval(parse(text=x))
+  res <- curve(dnorm(x,mean=mean.a,sd=sd.a),xlim=xlim,ylab='', xlab="", cex=3,axes=F)
+  xx <- paste("expression(zpeso[", i, "]==",point,")",sep="")  
+  par(xpd=TRUE)
+  text(0, -0.045, eval(parse(text=xx)))
+  par(xpd=FALSE)
+  options(OutDec=",")
+
+# acabo el grafic
+  alpha1 <- round(pnorm(weight$zpeso[i], log = FALSE), 3)
+  acumula<-1-(integrate(dnorm,lower=mean.a-qnorm(1-alpha1/2)*sd.a,
+              upper=mean.a+qnorm(1-alpha1/2)*sd.a,mean=mean.a,sd=sd.a)$value)
+  aux <- seq(xlim[1],mean.a+qnorm(alpha1)*sd.a,len=n)
+  
+  
+  x<-c(xlim[1],aux,mean.a+qnorm(alpha1)*sd.a)
+  y<-c(0,dnorm(aux,mean.a,sd.a),0)
+  polygon(x,y,col="red", border= 1)
+  axis(1,pretty(xlim,n=10), ,labels = FALSE, tck=0.0001)
+
+  par(xpd=TRUE)
+  text(-2,max(res$y), paste("expec = ", round(acumula,3), sep=""), cex=1.2)
+}
+
+```
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+Meta-information
+================
+exname: XXXXX
+extype: schoice
+exsolution: 10000
+exshuffle: 5

@@ -1,0 +1,86 @@
+Question
+========
+Se han medido los valores Barthel (una escala que mide dependencia) a 20 participantes en un estudio. Los valores obtenidos son los siguientes:
+
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+library(kableExtra)
+library(gdata)
+library(Hmisc)
+options(OutDec=",")
+options(scipen=999)
+mydat <- c(SimCon(sn = 15, smean=50, ssd=15, lolimit=1, uplimit=100, sdec=0), c(2,22,42,62,82))
+mydat <- mydat[order(mydat)]
+``` 
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+kable(paste(mydat, collapse = ", "), col.names = NULL)
+``` 
+
+Convierta esta variable en cualitativa ordinal creando 5 categorías:
+
+* participantes con valores entre 1 y 20
+* participantes con valores entre 21 y 40
+* participantes con valores entre 41 y 60
+* participantes con valores entre 61 y 80
+* participantes con valores entre 81 y 100
+
+Calcule la frecuencia, el porcentaje de casilla (grupo) y el porcentaje acumulado y diga ¿Cuál de las siguientes respuestas es <font size="5"> **FALSA** </font>?
+
+```{r echo = FALSE, results = 'hide', comment=FALSE}
+mydatcut <- as.character(cut(mydat, c(0, 20, 40, 60, 80, 100), include.lowest = T, right = T))
+mydatcut <- sub("\\(20", "[21", mydatcut)
+mydatcut <- sub("\\(40", "[41", mydatcut)
+mydatcut <- sub("\\(60", "[61", mydatcut)
+mydatcut <- sub("\\(80", "[81", mydatcut)
+
+library(questionr)
+
+xxx <- questionr::freq(mydatcut, cum = TRUE, total = TRUE, valid = F)
+``` 
+
+
+Answerlist
+----------
+* En el grupo entre 61-80 el porcentaje acumulado es `r xxx[4,3]-5`\%
+* En el grupo entre 21-40 la frecuencia es `r xxx[2,1]`
+* En el grupo entre 81-100 el porcentaje acumulado es 100\%
+* En el grupo entre 41-60 el porcentaje de casilla (o grupo) es `r xxx[3,2]`\%
+* En el grupo entre 0-20 el porcentaje acumulado es `r xxx[1,3]`\% 
+
+Solution
+========
+Observe la siguiente tabla resumen:
+<br> 
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+kable(xxx)
+``` 
+Donde:
+
+* n = frecuencia
+* \% = porcentaje de grupo o casilla
+* \%cum = porcentaje acumulado
+
+<br>
+
+Observe que para obtener el porcentaje acumulado en el grupo entre 61-80 se debe calcular `r xxx[3,3]` + `r xxx[4,2]` = `r round(xxx[4,3], 1)`
+
+
+<br>   
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: Tipo Variables
+extype: schoice
+exsolution: 10000
+exshuffle: 5

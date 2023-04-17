@@ -1,0 +1,103 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+options(scipen=999)
+xfrag <- sample(seq(110, 140, 1), 1)
+xprop <- sample(seq(0.07, 0.099, 0.001), 1)
+xn <- round(xfrag/xprop)
+
+lo90 <- xprop - 1.64 * sqrt(xprop * (1 - xprop)/ xn)
+up90 <- xprop + 1.64 * sqrt(xprop * (1 - xprop)/ xn)
+
+lo95 <- xprop - 1.96 * sqrt(xprop * (1 - xprop)/ xn)
+up95 <- xprop + 1.96 * sqrt(xprop * (1 - xprop)/ xn)
+
+lo99 <- xprop - 2.58 * sqrt(xprop * (1 - xprop)/ xn)
+up99 <- xprop + 2.58 * sqrt(xprop * (1 - xprop)/ xn)
+```
+Los servicios sociales de una ciudad quieren estimar el porcentaje de ancianos frágiles entre los ciudadanos $>$ 64 años de esta ciudad. Para ello seleccionan al azar `r xn` ciudadanos $>$ 64 años. Observan que el `r xfrag` pueden considerarse ``ancianos frágiles''. 
+
+¿Cuál de las siguientes respuestas es <font size="5"> **FALSA**</font>?
+
+Answerlist
+----------
+* Se estima con un nivel de confianza del 90% que la proporción de ancianos frágiles que tiene esta ciudad, debe ser algún valor entre `r format(round(lo90*0.75, 3), digits = 3, nsmall=3)` y `r format(round(up90*1.25, 3), digits = 3, nsmall=3)`. Expresado en porcentaje, entre el `r format(round(lo90*0.75*100, 1), digits = 1, nsmall=1)` % y el `r format(round(up90*1.25*100, 1), digits = 1, nsmall=1)`%
+* Se estima con un nivel de confianza del 95\% que la proporción de ancianos frágiles que tiene esta ciudad, debe ser algún valor entre `r format(round(lo95, 3), digits = 3, nsmall=3)` y `r format(round(up95, 3), digits = 3, nsmall=3)` Expresado en porcentaje, entre el `r format(round(lo95*100, 1), digits = 1, nsmall=1)`% y el `r format(round(up95*100, 1), digits = 1, nsmall=1)`%
+* Para calcular el Intervalo de Confianza del 95% (IC95%) se debe aplicar la siguiente ecuación:
+\begin{eqnarray}
+\scriptsize
+\text{IC}95\% = `r format(round(xprop, 3), digits = 3, nsmall=3)` \pm 1,96 * \sqrt{\frac{`r format(round(xprop, 3), digits = 3, nsmall=3)` * (1 - `r format(round(xprop, 3), digits = 3, nsmall=3)`)}{`r xn`}}
+\end{eqnarray}
+* Se estima con un nivel de confianza del 99% que la proporción de ancianos frágiles que tiene esta ciudad, debe ser algún valor entre `r format(round(lo99, 3), digits = 3, nsmall=3)` y `r format(round(up99, 3), digits = 3, nsmall=3)` Expresado en porcentaje, entre el `r format(round(lo99*100, 1), digits = 1, nsmall=1)`% y el `r format(round(up99*100, 1), digits = 1, nsmall=1)`%
+* Para calcular el IC90% se debe aplicar:
+\begin{eqnarray}
+\scriptsize
+\text{IC}90\% = p \pm 1,64* \sqrt{\frac{p * (1-p)}{n}}  
+\end{eqnarray}
+
+
+
+Solution
+========
+Para calcular un intervalos de confianza de una proporción XX (ICXX%) se debe aplicar la fórmula:
+${\scriptsize
+\begin{eqnarray}
+\text{IC}XX\% = p \pm z_{xx\%} * \sqrt{\frac{p * (1-p)}{n}} 
+\end{eqnarray}
+}$
+
+Dónde:
+
+* $z_{xx\%}$ = 1,64 para calcular intervalos de confianza del 90%
+* $z_{xx\%}$ = 1,96 para calcular intervalos de confianza del 95%
+* $z_{xx\%}$ = 2,58 para calcular intervalos de confianza del 99%
+
+-----
+
+
+${\scriptsize
+\begin{eqnarray}
+\text{IC}90\% &=& `r format(round(xprop, 3), digits = 3, nsmall=3)` \pm 1,64 * \sqrt{\frac{`r format(round(xprop, 3), digits = 3, nsmall=3)` * (1 - `r format(round(xprop, 3), digits = 3, nsmall=3)`)}{`r xn`}}\\
+&=& `r format(round(lo90, 3), digits = 3, nsmall=3)` \therefore `r format(round(up90, 3), digits = 3, nsmall=3)`
+	\Longrightarrow `r format(round(lo90*100, 1), digits = 1, nsmall=1)` \therefore `r format(round(up90*100, 1), digits = 1, nsmall=1)`
+\end{eqnarray}
+}$
+
+-----
+
+${\scriptsize
+\begin{eqnarray}
+\text{IC}95\% &=& `r format(round(xprop, 3), digits = 3, nsmall=3)` \pm 1,96 * \sqrt{\frac{`r format(round(xprop, 3), digits = 3, nsmall=3)` * (1 - `r format(round(xprop, 3), digits = 3, nsmall=3)`)}{`r xn`}}\\
+&=& `r format(round(lo95, 3), digits = 3, nsmall=3)` \therefore `r format(round(up95, 3), digits = 3, nsmall=3)`
+	\Longrightarrow `r format(round(lo95*100, 1), digits = 1, nsmall=1)` \therefore `r format(round(up95*100, 1), digits = 1, nsmall=1)`
+\end{eqnarray}
+}$
+
+-----
+
+${\scriptsize
+\begin{eqnarray}
+\text{IC}99\% &=& `r format(round(xprop, 3), digits = 3, nsmall=3)` \pm 2,58 * \sqrt{\frac{`r format(round(xprop, 3), digits = 3, nsmall=3)` * (1 - `r format(round(xprop, 3), digits = 3, nsmall=3)`)}{`r xn`}}\\
+&=& `r format(round(lo99, 3), digits = 3, nsmall=3)` \therefore `r format(round(up99, 3), digits = 3, nsmall=3)`
+	\Longrightarrow `r format(round(lo99*100, 1), digits = 1, nsmall=1)` \therefore `r format(round(up99*100, 1), digits = 1, nsmall=1)`
+\end{eqnarray}
+}$
+
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: XXXXX
+extype: schoice
+exsolution: 10000
+exshuffle: 5

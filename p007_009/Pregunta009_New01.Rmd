@@ -1,0 +1,71 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+xn <- sample(seq(5, 7), 1)
+xmean <- sample(seq(190, 220, by = 0.1), 1)
+xsd <-  xmean *0.20
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+dat <- data.frame(Id= seq(1, xn), Colesterol =SimCon(sn= xn, smean= xmean, ssd= xsd, lolimi = 140, uplimit= 300, sdec= 0))
+SampleSize <- sample(seq(3500, 4100), 1)
+
+SumSquares <- round(xsd^2 * (SampleSize-1))
+
+dat <- rbind(dat[1:nrow(dat)-1, ],
+      data.frame(Id = rep(".", 6), Colesterol = rep(".", 6)),
+      data.frame(Id = SampleSize, Colesterol = dat[nrow(dat), "Colesterol"]))
+options(scipen=999)
+
+``` 
+Se medido el colesterol a `r SampleSize` individuos. A continuación tiene una tabla con los `r xn-1` primeros valores y el último valor:
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+library(kableExtra)
+dat %>%
+  kbl(caption = "", , align = "c") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+``` 
+
+
+La media de estos `r SampleSize` valores de colesterol = $\overline{X}$ = `r xmean`.
+
+Se ha calculado el sumatorio $\displaystyle\sum_{i=1}^{`r SampleSize`} (x_i - \overline{X})^2$, es decir $(`r dat[1,"Colesterol"]`-`r xmean`)^2 + (`r dat[2,"Colesterol"]`-`r xmean`)^2 +\ldots+(`r dat[nrow(dat),"Colesterol"]`-`r xmean`)^2=`r SumSquares`$
+
+```{r echo = FALSE, results = 'hide', comment=FALSE}
+NoOk1 <- round(xsd^2, 1)
+NoOk2 <- round(xsd^2, 1)/2
+NoOk3 <- round(xsd/2, 1)
+NoOk4 <- round(sqrt(SumSquares/xn), 1)
+```
+
+Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> **CORRECTA** </font>?
+Answerlist
+----------
+* `r xsd`
+* `r NoOk1`
+* `r NoOk2`
+* `r NoOk3`
+* `r NoOk4`
+
+
+Solution
+========
+* Para obtener la DE = $\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{`r SumSquares`}{`r SampleSize`-1}}=`r xsd`$ 
+
+
+
+Answerlist
+----------
+* Respuesta Correcta
+* Respuesta FALSA
+* Respuesta FALSA
+* Respuesta FALSA
+* Respuesta FALSA
+
+
+
+Meta-information
+================
+exname: Descriptives numerical
+extype: schoice
+exsolution: 10000
+exshuffle: 5

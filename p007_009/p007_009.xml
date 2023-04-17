@@ -1,0 +1,8174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+
+<question type="category">
+<category>
+<text>$course$/p007_009/Exercise 1</text>
+</category>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R01 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 18 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+96, 48, 75, 57, 61, 44, 66, 52, 78, 51, 71, 87, 42, 94, 47, 69, 94, 95
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{96 + 48 + \cdots + 94 + 95}{18} = 68,2\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 9 y 10:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:right;">
+44
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+51
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+71
+</td>
+<td style="text-align:right;">
+75
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:right;">
+95
+</td>
+<td style="text-align:right;">
+96
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{66 + 69}{2}\)</span> = 67,5</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 94 (se repite 2 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 68,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 94
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 69
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R02 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 20 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+49, 55, 66, 78, 53, 61, 75, 43, 68, 71, 55, 55, 58, 53, 80, 70, 50, 74, 91, 56
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{49 + 55 + \cdots + 91 + 56}{20} = 63\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 10 y 11:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+20
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:right;">
+49
+</td>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:right;">
+58
+</td>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:right;">
+71
+</td>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:right;">
+75
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:right;">
+91
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{58 + 61}{2}\)</span> = 59,5</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 55 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 55
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 61
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 63
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R03 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 22 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+88, 65, 58, 52, 75, 32, 58, 57, 55, 68, 63, 58, 69, 66, 96, 55, 69, 47, 85, 74, 90, 82
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{88 + 65 + \cdots + 90 + 82}{22} = 66,5\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 11 y 12:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+22
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+58
+</td>
+<td style="text-align:right;">
+58
+</td>
+<td style="text-align:right;">
+58
+</td>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:right;">
+75
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+88
+</td>
+<td style="text-align:right;">
+90
+</td>
+<td style="text-align:right;">
+96
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{65 + 66}{2}\)</span> = 65,5</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 32 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 58
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 67
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 66,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R04 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 18 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+52, 62, 97, 70, 62, 88, 84, 68, 51, 55, 62, 80, 60, 49, 94, 64, 68, 56
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{52 + 62 + \cdots + 68 + 56}{18} = 67,9\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 9 y 10:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+49
+</td>
+<td style="text-align:right;">
+51
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:right;">
+84
+</td>
+<td style="text-align:right;">
+88
+</td>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:right;">
+97
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{62 + 64}{2}\)</span> = 63</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 62 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 64,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 62
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 67,9
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R05 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 20 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+63, 61, 54, 53, 76, 56, 62, 85, 78, 58, 68, 66, 55, 65, 54, 63, 43, 67, 81, 80
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{63 + 61 + \cdots + 81 + 80}{20} = 64,4\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 10 y 11:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+20
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:right;">
+58
+</td>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:right;">
+81
+</td>
+<td style="text-align:right;">
+85
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{63 + 63}{2}\)</span> = 63</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 54 (se repite 2 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 64,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 64,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 54
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R06 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 18 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+35, 62, 55, 66, 48, 68, 54, 69, 74, 91, 82, 78, 57, 79, 59, 70, 62, 88
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{35 + 62 + \cdots + 62 + 88}{18} = 66,5\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 9 y 10:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+35
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+59
+</td>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:right;">
+79
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:right;">
+88
+</td>
+<td style="text-align:right;">
+91
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{66 + 68}{2}\)</span> = 67</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 35 (se repite 2 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 68,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 62
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 66,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R07 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 18 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+74, 66, 68, 94, 85, 67, 68, 68, 94, 74, 47, 87, 84, 80, 78, 97, 60, 64
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{74 + 66 + \cdots + 60 + 64}{18} = 75,3\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 9 y 10:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:right;">
+66
+</td>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:right;">
+84
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:right;">
+97
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{74 + 74}{2}\)</span> = 74</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 68 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 68
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 75,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 75,3
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R08 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 18 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+73, 54, 79, 79, 68, 57, 61, 90, 55, 80, 98, 52, 68, 71, 55, 79, 87, 98
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{73 + 54 + \cdots + 87 + 98}{18} = 72,4\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 9 y 10:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+71
+</td>
+<td style="text-align:right;">
+73
+</td>
+<td style="text-align:right;">
+79
+</td>
+<td style="text-align:right;">
+79
+</td>
+<td style="text-align:right;">
+79
+</td>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:right;">
+90
+</td>
+<td style="text-align:right;">
+98
+</td>
+<td style="text-align:right;">
+98
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{71 + 73}{2}\)</span> = 72</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 79 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 72,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 73,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 79
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R09 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 22 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+51, 52, 65, 79, 61, 54, 65, 52, 48, 42, 55, 84, 47, 10, 82, 58, 48, 51, 55, 73, 48, 44
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{51 + 52 + \cdots + 48 + 44}{22} = 55,6\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 11 y 12:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+22
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:right;">
+44
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+51
+</td>
+<td style="text-align:right;">
+51
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+58
+</td>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+73
+</td>
+<td style="text-align:right;">
+79
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:right;">
+84
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{52 + 54}{2}\)</span> = 53</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 10 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 55,6
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 54,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 48
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R10 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 18 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+53, 46, 67, 81, 55, 67, 69, 45, 76, 46, 52, 74, 61, 63, 46, 75, 47, 69
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{53 + 46 + \cdots + 47 + 69}{18} = 60,7\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 9 y 10:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:right;">
+75
+</td>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:right;">
+81
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{61 + 63}{2}\)</span> = 62</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 46 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 63,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 60,7
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 46
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R11 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 22 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+63, 92, 57, 52, 80, 90, 51, 93, 77, 61, 45, 56, 63, 49, 93, 56, 60, 97, 94, 93, 69, 78
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{63 + 92 + \cdots + 69 + 78}{22} = 71,3\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 11 y 12:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+22
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:right;">
+49
+</td>
+<td style="text-align:right;">
+51
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+77
+</td>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:right;">
+90
+</td>
+<td style="text-align:right;">
+92
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:right;">
+97
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{63 + 69}{2}\)</span> = 66</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 93 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 67,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 93
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 71,3
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R12 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 22 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+61, 70, 68, 50, 87, 92, 75, 65, 76, 60, 55, 73, 71, 46, 57, 65, 89, 47, 71, 65, 79, 55
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{61 + 70 + \cdots + 79 + 55}{22} = 67,1\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 11 y 12:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+22
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+68
+</td>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:right;">
+71
+</td>
+<td style="text-align:right;">
+71
+</td>
+<td style="text-align:right;">
+73
+</td>
+<td style="text-align:right;">
+75
+</td>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:right;">
+79
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:right;">
+89
+</td>
+<td style="text-align:right;">
+92
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{65 + 68}{2}\)</span> = 66,5</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 65 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 65
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 67,1
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 68
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R13 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 18 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+60, 85, 46, 71, 52, 61, 50, 47, 47, 53, 57, 54, 79, 90, 52, 81, 42, 52
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{60 + 85 + \cdots + 42 + 52}{18} = 59,9\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 9 y 10:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:right;">
+71
+</td>
+<td style="text-align:right;">
+79
+</td>
+<td style="text-align:right;">
+81
+</td>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:right;">
+90
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{53 + 54}{2}\)</span> = 53,5</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 52 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 59,9
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 52
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 55
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R14 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 20 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+83, 54, 64, 38, 60, 56, 69, 69, 46, 80, 45, 53, 45, 60, 57, 64, 84, 45, 40, 83
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{83 + 54 + \cdots + 40 + 83}{20} = 59,8\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 10 y 11:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+20
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+38
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+54
+</td>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:right;">
+83
+</td>
+<td style="text-align:right;">
+83
+</td>
+<td style="text-align:right;">
+84
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{57 + 60}{2}\)</span> = 58,5</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 38 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 59,8
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 45
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 60
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R15 Q1 : Pregunta007_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se han medido el peso en kg a una muestra de 22 individuos, los valores obtenidos son:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+60, 53, 49, 60, 73, 70, 58, 76, 60, 69, 67, 49, 69, 46, 77, 32, 87, 48, 48, 44, 72, 79
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>FALSA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{60 + 53 + \cdots + 72 + 79}{22} = 61,2\)</span></p>
+<p><br></p>
+<ul>
+<li>Para calcular la mediana debe previamente ordenarse los datos y, como que se trata de un número par de individuos, sumar los dos de en medio y dividir por 2. Concretamente los valores que están en la posición 11 y 12:</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Posición
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+22
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Valor
+</td>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:right;">
+44
+</td>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:right;">
+49
+</td>
+<td style="text-align:right;">
+49
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+58
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+67
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:right;">
+73
+</td>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:right;">
+77
+</td>
+<td style="text-align:right;">
+79
+</td>
+<td style="text-align:right;">
+87
+</td>
+</tr>
+</tbody>
+</table>
+<p>Md = <span class="math inline">\(\scriptsize \dfrac{60 + 60}{2}\)</span> = 60</p>
+<p><br></p>
+<ul>
+<li>La Moda es el valor que más se repite. Claramente en estos datos el valor que más ser repite es el 32 (se repite 3 veces).</li>
+</ul>
+<p><br></p>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+El valor de la mediana nos indica que el 50% de individuos tienen valores por debajo de mediana y el 50% por encima
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La moda = 60
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+La mediana = 61,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+La media = 61,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+Para calcular la mediana se tienen que ordenar los valores. Si el número es par (la ``n’’) se calcula la media de los dos valores del medio. Si el número es impar, la mediana coincide con el valor del medio.
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="category">
+<category>
+<text>$course$/p007_009/Exercise 2</text>
+</category>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R01 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+66, 62, 59, 59, 51
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+66, 62, 59, 59, 51
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{66 + 62 + \cdots + 51}{5} = 59,4\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((66 - 59,4)^{2} + \ldots + (66 - 59,4)^{2} = 121,2\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{121,2}{5- 1} = 30,3\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{30,3} = 5,5\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 918,1, DE = 2,346
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 15,15, DE = 2,75
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 30,3, DE = 5,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 30,3, DE = 2,346
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 918,1, DE = 5,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R02 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+63, 54, 53, 63, 59
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+63, 54, 53, 63, 59
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{63 + 54 + \cdots + 59}{5} = 58,4\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((63 - 58,4)^{2} + \ldots + (63 - 58,4)^{2} = 91,2\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{91,2}{5- 1} = 22,8\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{22,8} = 4,8\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 22,8, DE = 2,185
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 22,8, DE = 4,8
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 519,8, DE = 2,185
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 519,8, DE = 4,8
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 11,4, DE = 2,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R03 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+58, 77, 71, 74, 58, 65
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+58, 77, 71, 74, 58, 65
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{58 + 77 + \cdots + 65}{6} = 67,2\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((58 - 67,2)^{2} + \ldots + (58 - 67,2)^{2} = 330,8\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{330,8}{6- 1} = 66,2\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{66,2} = 8,1\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 66,2, DE = 2,852
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 4378, DE = 8,1
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 66,2, DE = 8,1
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 4378, DE = 2,852
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 33,1, DE = 4,05
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R04 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+80, 70, 67, 50, 94, 60
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+80, 70, 67, 50, 94, 60
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{80 + 70 + \cdots + 60}{6} = 70,2\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((80 - 70,2)^{2} + \ldots + (80 - 70,2)^{2} = 1184,8\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{1184,8}{6- 1} = 237\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{237} = 15,4\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 237, DE = 15,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 118,5, DE = 7,7
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 56153,2, DE = 3,923
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 237, DE = 3,923
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 56153,2, DE = 15,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R05 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+42, 79, 77, 64, 90, 52, 80
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+42, 79, 77, 64, 90, 52, 80
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{42 + 79 + \cdots + 80}{7} = 69,1\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((42 - 69,1)^{2} + \ldots + (42 - 69,1)^{2} = 1768,9\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{1768,9}{7- 1} = 294,8\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{294,8} = 17,2\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 86912,7, DE = 17,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 294,8, DE = 4,144
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 86912,7, DE = 4,144
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 147,4, DE = 8,6
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 294,8, DE = 17,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R06 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+71, 82, 88, 71, 58, 90, 47
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+71, 82, 88, 71, 58, 90, 47
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{71 + 82 + \cdots + 47}{7} = 72,4\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((71 - 72,4)^{2} + \ldots + (71 - 72,4)^{2} = 1501,7\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{1501,7}{7- 1} = 250,3\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{250,3} = 15,8\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 250,3, DE = 15,8
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 250,3, DE = 3,977
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 62642,9, DE = 15,8
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 125,15, DE = 7,9
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 62642,9, DE = 3,977
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R07 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+53, 68, 53, 54, 57, 71
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+53, 68, 53, 54, 57, 71
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{53 + 68 + \cdots + 71}{6} = 59,3\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((53 - 59,3)^{2} + \ldots + (53 - 59,3)^{2} = 325,3\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{325,3}{6- 1} = 65,1\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{65,1} = 8,1\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 32,55, DE = 4,05
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 65,1, DE = 2,84
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 4233,7, DE = 2,84
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 65,1, DE = 8,1
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 4233,7, DE = 8,1
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R08 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+61, 70, 88, 59, 57, 85, 58
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+61, 70, 88, 59, 57, 85, 58
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{61 + 70 + \cdots + 58}{7} = 68,3\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((61 - 68,3)^{2} + \ldots + (61 - 68,3)^{2} = 1043,4\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{1043,4}{7- 1} = 173,9\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{173,9} = 13,2\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 173,9, DE = 3,631
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 30242,9, DE = 13,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 173,9, DE = 13,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 30242,9, DE = 3,631
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 86,95, DE = 6,6
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R09 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+85, 63, 58, 72, 81
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+85, 63, 58, 72, 81
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{85 + 63 + \cdots + 81}{5} = 71,8\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((85 - 71,8)^{2} + \ldots + (85 - 71,8)^{2} = 526,8\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{526,8}{5- 1} = 131,7\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{131,7} = 11,5\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 131,7, DE = 11,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 131,7, DE = 3,388
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 17344,9, DE = 11,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 65,85, DE = 5,75
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 17344,9, DE = 3,388
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R10 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+69, 58, 45, 66, 71
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+69, 58, 45, 66, 71
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{69 + 58 + \cdots + 71}{5} = 61,8\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((69 - 61,8)^{2} + \ldots + (69 - 61,8)^{2} = 450,8\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{450,8}{5- 1} = 112,7\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{112,7} = 10,6\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 12701,3, DE = 3,258
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 56,35, DE = 5,3
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 112,7, DE = 3,258
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 12701,3, DE = 10,6
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 112,7, DE = 10,6
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R11 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+53, 64, 75, 43, 61
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+53, 64, 75, 43, 61
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{53 + 64 + \cdots + 61}{5} = 59,2\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((53 - 59,2)^{2} + \ldots + (53 - 59,2)^{2} = 576,8\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{576,8}{5- 1} = 144,2\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{144,2} = 12\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 20793,6, DE = 12
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 72,1, DE = 6
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 144,2, DE = 12
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 20793,6, DE = 3,465
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 144,2, DE = 3,465
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R12 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+62, 87, 76, 75, 68
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+62, 87, 76, 75, 68
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{62 + 87 + \cdots + 68}{5} = 73,6\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((62 - 73,6)^{2} + \ldots + (62 - 73,6)^{2} = 353,2\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{353,2}{5- 1} = 88,3\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{88,3} = 9,4\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 44,15, DE = 4,7
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 7796,9, DE = 9,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 7796,9, DE = 3,065
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 88,3, DE = 3,065
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 88,3, DE = 9,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R13 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+82, 79, 60, 58, 71, 83, 53
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+82, 79, 60, 58, 71, 83, 53
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{82 + 79 + \cdots + 53}{7} = 69,4\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((82 - 69,4)^{2} + \ldots + (82 - 69,4)^{2} = 925,7\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{925,7}{7- 1} = 154,3\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{154,3} = 12,4\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 154,3, DE = 12,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 77,15, DE = 6,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 23804,1, DE = 12,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 23804,1, DE = 3,524
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 154,3, DE = 3,524
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R14 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+49, 59, 46, 41, 73
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+49, 59, 46, 41, 73
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{49 + 59 + \cdots + 73}{5} = 53,6\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((49 - 53,6)^{2} + \ldots + (49 - 53,6)^{2} = 643,2\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{643,2}{5- 1} = 160,8\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{160,8} = 12,7\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 80,4, DE = 6,35
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 160,8, DE = 12,7
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 25856,6, DE = 12,7
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 25856,6, DE = 3,561
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 160,8, DE = 3,561
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R15 Q2 : Pregunta008_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Calcule la varianza (<span class="math inline">\(S^2\)</span>) y la desviación estándar (DE) de los siguientes valores:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+79, 62, 68, 67, 49
+</td>
+</tr>
+</tbody>
+</table>
+<p>¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align:left;">
+79, 62, 68, 67, 49
+</td>
+</tr>
+</tbody>
+</table>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la media se debe calcular:</li>
+</ul>
+<p><span class="math inline">\(\scriptsize \overline{\textrm{X}} = \dfrac{79 + 62 + \cdots + 49}{5} = 65\)</span></p>
+<p><br></p>
+<ul>
+<li>Para obtener la varianza se debe calcular la <em>la suma de lo lejos de la media que está cada valor, elevado al cuadrado</em> (suma de cuadrados). Concretamente:</li>
+</ul>
+<p>Suma de Cuadrados = <span class="math inline">\((79 - 65)^{2} + \ldots + (79 - 65)^{2} = 474\)</span></p>
+<p>Var = <span class="math inline">\(S^2 = \dfrac{474}{5- 1} = 118,5\)</span></p>
+<p><br></p>
+<ul>
+<li>La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = <span class="math inline">\(\sqrt{118,5} = 10,9\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 118,5, DE = 3,299
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 118,5, DE = 10,9
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 59,25, DE = 5,45
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 14042,2, DE = 3,299
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+<span class="math inline">\(S^2\)</span> = 14042,2, DE = 10,9
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="category">
+<category>
+<text>$course$/p007_009/Exercise 3</text>
+</category>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R01 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3934 individuos. A continuación tiene una tabla con los 6 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+178
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+143
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+153
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+228
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:center;">
+194
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+148
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3934
+</td>
+<td style="text-align:center;">
+211
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3934 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 205,7.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3934} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((178-205,7)^2 + (143-205,7)^2 +\ldots+(211-205,7)^2=6656601\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{6656601}{3934-1}}=41,14\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+975,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+41,14
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1692,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+846,25
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+20,6
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R02 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3804 individuos. A continuación tiene una tabla con los 4 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+171
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+173
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+256
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+221
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3804
+</td>
+<td style="text-align:center;">
+149
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3804 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 202,3.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3804} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((171-202,3)^2 + (173-202,3)^2 +\ldots+(149-202,3)^2=6225555\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{6225555}{3804-1}}=40,46\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+40,46
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1637
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+20,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+818,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1115,8
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R03 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3781 individuos. A continuación tiene una tabla con los 5 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+239
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+151
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+265
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+227
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:center;">
+204
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3781
+</td>
+<td style="text-align:center;">
+199
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3781 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 198,2.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3781} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((239-198,2)^2 + (151-198,2)^2 +\ldots+(199-198,2)^2=5939626\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{5939626}{3781-1}}=39,64\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1571,3
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+785,65
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+995
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+19,8
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+39,64
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R04 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3802 individuos. A continuación tiene una tabla con los 4 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+178
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+166
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+273
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+143
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3802
+</td>
+<td style="text-align:center;">
+240
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3802 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 208,1.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3802} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((178-208,1)^2 + (166-208,1)^2 +\ldots+(240-208,1)^2=6584185\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{6584185}{3802-1}}=41,62\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+20,8
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+41,62
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+866,1
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1732,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1147,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R05 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3870 individuos. A continuación tiene una tabla con los 5 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+180
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+213
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+197
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+165
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:center;">
+237
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3870
+</td>
+<td style="text-align:center;">
+234
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3870 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 214,3.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3870} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((180-214,3)^2 + (213-214,3)^2 +\ldots+(234-214,3)^2=7107274\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{7107274}{3870-1}}=42,86\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+42,86
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+918,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1837
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1088,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+21,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R06 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3776 individuos. A continuación tiene una tabla con los 4 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+181
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+268
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+217
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+230
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3776
+</td>
+<td style="text-align:center;">
+276
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3776 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 199,5.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3776} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((181-199,5)^2 + (268-199,5)^2 +\ldots+(276-199,5)^2=6009838\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{6009838}{3776-1}}=39,9\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+20
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1096,3
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1592
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+39,9
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+796
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R07 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3994 individuos. A continuación tiene una tabla con los 5 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+153
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+184
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+199
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+167
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:center;">
+234
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3994
+</td>
+<td style="text-align:center;">
+201
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3994 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 190,4.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3994} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((153-190,4)^2 + (184-190,4)^2 +\ldots+(201-190,4)^2=5790195\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{5790195}{3994-1}}=38,08\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+38,08
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+725,05
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+19
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+982,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1450,1
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R08 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3534 individuos. A continuación tiene una tabla con los 5 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+200
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+178
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+250
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+299
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:center;">
+179
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3534
+</td>
+<td style="text-align:center;">
+147
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3534 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 194,1.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3534} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((200-194,1)^2 + (178-194,1)^2 +\ldots+(147-194,1)^2=5324204\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{5324204}{3534-1}}=38,82\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+942
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+753,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+38,82
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+19,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1507
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R09 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3858 individuos. A continuación tiene una tabla con los 5 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+254
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+151
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+158
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+283
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:center;">
+250
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3858
+</td>
+<td style="text-align:center;">
+160
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3858 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 207,9.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3858} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((254-207,9)^2 + (151-207,9)^2 +\ldots+(160-207,9)^2=6668353\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{6668353}{3858-1}}=41,58\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1728,9
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+20,8
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1054,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+41,58
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+864,45
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R10 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3533 individuos. A continuación tiene una tabla con los 4 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+249
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+149
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+225
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+143
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3533
+</td>
+<td style="text-align:center;">
+159
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3533 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 204,6.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3533} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((249-204,6)^2 + (149-204,6)^2 +\ldots+(159-204,6)^2=5914145\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{5914145}{3533-1}}=40,92\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+40,92
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+837,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1087,6
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+20,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1674,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R11 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3709 individuos. A continuación tiene una tabla con los 5 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+183
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+264
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+253
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+253
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:center;">
+172
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3709
+</td>
+<td style="text-align:center;">
+207
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3709 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 213,1.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3709} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((183-213,1)^2 + (264-213,1)^2 +\ldots+(207-213,1)^2=6735450\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{6735450}{3709-1}}=42,62\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+42,62
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1059,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1816,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+908,25
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+21,3
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R12 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3582 individuos. A continuación tiene una tabla con los 6 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+204
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+211
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+151
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+238
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:center;">
+153
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+6
+</td>
+<td style="text-align:center;">
+145
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3582
+</td>
+<td style="text-align:center;">
+166
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3582 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 190,6.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3582} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((204-190,6)^2 + (211-190,6)^2 +\ldots+(166-190,6)^2=5203674\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{5203674}{3582-1}}=38,12\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1453,1
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+38,12
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+726,55
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+19,1
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+862,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R13 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3647 individuos. A continuación tiene una tabla con los 4 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+280
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+161
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+286
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+186
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3647
+</td>
+<td style="text-align:center;">
+211
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3647 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 202,3.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3647} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((280-202,3)^2 + (161-202,3)^2 +\ldots+(211-202,3)^2=5968544\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{5968544}{3647-1}}=40,46\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta FALSA </li>
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+20,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+40,46
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1637
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1092,6
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+818,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R14 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 4030 individuos. A continuación tiene una tabla con los 5 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+162
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+220
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+239
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+224
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:center;">
+250
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4030
+</td>
+<td style="text-align:center;">
+174
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 4030 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 213,6.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{4030} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((162-213,6)^2 + (220-213,6)^2 +\ldots+(174-213,6)^2=7352919\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{7352919}{4030-1}}=42,72\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+42,72
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1107
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+21,4
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1825
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+912,5
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+
+<question type="multichoice">
+<name>
+<text> R15 Q3 : Pregunta009_New01 </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<p>
+<p>Se medido el colesterol a 3724 individuos. A continuación tiene una tabla con los 4 primeros valores y el último valor:</p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Id
+</th>
+<th style="text-align:center;">
+Colesterol
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+143
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+204
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+159
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+149
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+.
+</td>
+<td style="text-align:center;">
+.
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+3724
+</td>
+<td style="text-align:center;">
+143
+</td>
+</tr>
+</tbody>
+</table>
+<p>La media de estos 3724 valores de colesterol = <span class="math inline">\(\overline{X}\)</span> = 191,7.</p>
+<p>Se ha calculado el sumatorio <span class="math inline">\(\displaystyle\sum_{i=1}^{3724} (x_i - \overline{X})^2\)</span>, es decir <span class="math inline">\((143-191,7)^2 + (204-191,7)^2 +\ldots+(143-191,7)^2=5472645\)</span></p>
+<p>Calcule la desviación estándar ¿Cuál de las siguientes respuestas es <font size="5"> <strong>CORRECTA</strong> </font>?</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<ul>
+<li>Para obtener la DE = <span class="math inline">\(\scriptsize \sqrt{\dfrac{\text{Suma de Cuadrados}}{n-1}}=\sqrt{\dfrac{5472645}{3724-1}}=38,34\)</span></li>
+</ul>
+<ol type = "a">
+<li> Respuesta Correcta </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+<li> Respuesta FALSA </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<shuffleanswers>false</shuffleanswers>
+<single>true</single>
+<answernumbering>abc</answernumbering>
+<answer fraction="100" format="html">
+<text><![CDATA[<p>
+38,34
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta Correcta
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1470
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+735
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+1046,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+<answer fraction="-25" format="html">
+<text><![CDATA[<p>
+19,2
+</p>]]></text>
+<feedback format="html">
+<text><![CDATA[<p>
+Respuesta FALSA
+</p>]]></text>
+</feedback>
+</answer>
+</question>
+
+</quiz>

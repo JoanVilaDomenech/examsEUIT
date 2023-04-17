@@ -1,0 +1,74 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+options(scipen=999)
+xmean <- sample(seq(150, 190), 1) + 0.2
+xsd <- round(xmean*0.15, 0) + 0.31
+xz <- sample(seq(3.02, 3.09, 0.01), 1)
+xi <- round((xz * xsd) + xmean, 0)
+xerror <- format(sample(seq(1.80, 2.99, 0.01), 1), digits = 2, nsmall = 2)
+xpercent <- round(pnorm(xz)*100, 1)
+
+```
+Los valores en sangre de una substancia tóxica se sabe que sigue una distribución normal con $\overline{X}$ = `r xmean` y DE = `r xsd`. A un individuo se le mide el valor de esta substancia y su valor es de `r xi`.
+
+Estandarice este valor y con la ayuda de la tabla de la distribución normal diga: ¿Cuál de las siguientes respuestas es <font size="5"> **FALSA**</font>?
+
+Answerlist
+----------
+* El valor estandarizado de este individuo es `r xerror`
+* El valor de este individuo es muy alto
+* El `r format(xpercent, digits = 1, nsmall = 1)`% de los valores de esta substancia son $\leq$  `r xi`
+* Sólo `r (100-xpercent)*10` de cada mil valores de esta substancia son $\geq$ `r xi`
+* Para estandarizar un valor se debe aplicar $zx_i = \frac{x_i - \overline{X}}{DE}$
+
+
+Solution
+========
+* El valor estandarizado de este individuo es
+ $zx_i = \dfrac{`r xi` - `r xmean`}{`r xsd`} = `r xz`$ 
+
+-----
+
+* El valor de este individuo es muy alto ya que su valor estadarizado es `r xz` y el área bajo curva que este valor deja por debajo es muy alta. 
+
+-----
+
+* El `r format(xpercent, digits = 1, nsmall = 1)`% de los valores de esta substancia son $\leq$  `r xi`. 
+
+Si estandariza el valor `r xi` obtendrá `r xz` . Si busca en la tabla de la Distribución Normal en valor `r xz` verá que le corresponde una área de `r format(round(1-pnorm(xz), 5), digits = 5, nsmall=5)`, por lo tanto el 1 - `r format(round(1-pnorm(xz), 5), digits = 5, nsmall=5)` = `r xpercent`% son $\leq$ `r xz` y por lo tanto $\leq$ `r xi`.
+
+-----
+
+* Sólo `r (100-xpercent)*10` de cada mil valores de esta substancia son $\geq$ `r xi`
+
+Si estandariza el valor `r xi` obtendrá `r xz` . Si busca en la tabla de la Distribución Normal en valor `r xz` verá que le corresponde una área de `r format(round(1-pnorm(xz), 5), digits = 5, nsmall=5)`, por lo tanto el 1 - `r format(round(1-pnorm(xz), 5), digits = 5, nsmall=5)` = `r xpercent`% son $\leq$ `r xz` y por lo tanto $\leq$ `r xi`.
+
+Si el `r xpercent`% son $\leq$ `r xi`, el `r (100-xpercent)*10` por 1000 son $\geq$ `r xi`.
+
+-----
+
+* Para estandarizar un valor se debe aplicar $zx_i = \frac{x_i - \overline{X}}{DE}$ 
+
+Esta respuesta es correcta ya que es la fórmula para estandarizar un valor.
+
+-----
+
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: XXXXX
+extype: schoice
+exsolution: 10000
+exshuffle: 5

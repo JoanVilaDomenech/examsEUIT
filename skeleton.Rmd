@@ -1,0 +1,41 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+options(scipen=999)
+
+```
+En una variable estandarizada que siguiera una distribución normal, ¿Cuál de las siguientes respuestas es <font size="5"> **FALSA**</font>?
+
+Answerlist
+----------
+* AA1
+* AA2
+* AA3
+* AA4
+* AA5
+
+
+Solution
+========
+Hola. 
+
+
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: XXXXX
+extype: schoice
+exsolution: 10000
+exshuffle: 5

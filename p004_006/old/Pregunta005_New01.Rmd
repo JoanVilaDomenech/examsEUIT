@@ -1,0 +1,131 @@
+Question
+========
+Se analizaron los casos anuales de meningitis meníngocócica en niños $\leq$ 2 años en 5 comunidades autónomas<sup>(1)</sup>.
+
+<h1 style="font-size:10px;"><sup>(1)</sup>*Casado J,Fenoll A, Berró S, Aristegui J, Rodrigo de Liria C, Martinón JM, Fernández C. Meningitis neumocócica en niños españoles: incidencia, serotipos y resistencia antibiótica. Estudio prospectivo multicéntrico. An Pediatr 2002;57:295-300.*</h1>
+
+
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+library(kableExtra)
+library(gdata)
+options(OutDec=",")
+options(scipen=999)
+
+ncat <- sample(seq(21, 25), 1)
+popcat <- sample(seq(110000, 120000), 1)
+
+ngal <- sample(seq(6, 10), 1)
+popgal <- sample(seq(36500, 37500), 1)
+
+nmad <- sample(seq(21, 25), 1)
+popmad <- sample(seq(96500, 98500), 1)
+
+nnav <- sample(seq(1, 3), 1)
+popnav <- sample(seq(9500, 10000), 1)
+
+neus <- sample(seq(12, 18), 1)
+popeus <- sample(seq(31000, 33000), 1)
+
+
+
+ToTable <- data.frame(
+  Comunidad= c("Cataluña", "Galicia", "Madrid", "Navarra", "País Vasco"), 
+  Casos = c(ncat, ngal, nmad, nnav,neus), 
+  pop = c(popcat, popgal, popmad, popnav, popeus)
+)
+
+names(ToTable)[3] <- "Población Expuesta"
+```
+
+
+
+<br>
+
+Tabla 1: Casos observados y población expuesta según comunidad autónoma
+<br>
+
+```{r resu, echo = FALSE, results = 'asis'}
+ToTable %>%
+  kbl(align = c("lcr"), linesep=FALSE) %>% 
+  kable_classic(full_width = F, html_font = "Cambria", position = "left") %>% 
+  kable_styling(font_size=18, position = "left")
+```
+
+```{r resu2, echo = FALSE, results = 'hide'}
+xComunidad <- sample(c("Galicia", "Navarra", "País Vasco"), 1)
+xCasos <- subset(ToTable, Comunidad==xComunidad)$Casos
+xExpuestos <- subset(ToTable, Comunidad==xComunidad)$'Población Expuesta'
+por1000 <- round(xCasos/xExpuestos*1000, 4)
+
+xComunidad2 <- sample(c("Cataluña", "Madrid"), 1)
+xCasos2 <- subset(ToTable, Comunidad==xComunidad2)$Casos
+xExpuestos2 <- subset(ToTable, Comunidad==xComunidad2)$'Población Expuesta'
+por10000 <- round(xCasos/xExpuestos*10000, 4)
+
+xCasosMadrid <- subset(ToTable, Comunidad=="Madrid")$Casos
+xExpuestosMadrid <- subset(ToTable, Comunidad=="Madrid")$'Población Expuesta'
+
+pMadrid <- xCasosMadrid/xExpuestosMadrid
+eeMadrid <- format(round(sqrt(pMadrid*(1-pMadrid)/xExpuestosMadrid), 8),scientific = FALSE)
+
+sumcasos <- sum(ToTable$Casos)
+xxx <- ToTable
+xxx <- rename.vars(xxx, "Población Expuesta", "Expuestos")
+xxx$prop <- with(xxx, Casos/Expuestos)
+
+comu <- sample(subset(xxx, prop!=max(prop))$Comunidad, 1)
+```
+
+
+<h1 style="font-size:10px;">*Los valores, aunque son similares, no son exactamente los del artículo ya que se han simulado para hacer los ejercicios*</h1>
+
+<br>
+
+<br>
+
+¿Cuál de las siguientes respuestas es <font size="5"> **FALSA** </font>?
+
+Answerlist
+----------
+* La comunidad que presenta una proporción más alta de casos es `r comu`
+* Para calcular los casos por 10.000 en `r xComunidad2` se ha de calcular: $\scriptsize \dfrac{ `r xCasos2`}{`r xExpuestos2`}$ * 10000 = `r por10000`
+* Para calcular los casos por 1.000 en `r xComunidad` se ha de calcular: $\scriptsize \dfrac{ `r xCasos`}{`r xExpuestos`}$ * 1000 = `r por1000`
+* Para calcular el error estándar de la proporción de casos en Madrid se ha de calcular:  $\sqrt{\frac{`r round(pMadrid, 7)` * (1-`r round(pMadrid, 7)` )}{`r xExpuestosMadrid`}}$ =  `r eeMadrid`
+* En las 5 comunidades analizadas en total hubo `r sum(ToTable$Casos)` casos (`r paste(ToTable$Casos,collapse=" + ")`  = `r sum(ToTable$Casos)`), el `r format(round(xCasosMadrid/sum(ToTable$Casos)*100, 1), scientific = FALSE)`\%  de los cuales ocurrieron en la comunidad de Madrid
+
+
+Solution
+========
+```{r , echo = FALSE, results = 'hide'}
+xxx <- xxx[order(xxx$Comunidad), ]
+```
+
+* La proporción en cada una de las comunidades es:
+  + `r xxx[1,1]` = $\scriptsize \dfrac{ `r xxx[1,2]`}{`r xxx[1,3]`}$ = `r round(xxx[1,4], 7)`
+  + `r xxx[2,1]` = $\scriptsize \dfrac{ `r xxx[2,2]`}{`r xxx[2,3]`}$ = `r round(xxx[2,4], 7)`
+  + `r xxx[3,1]` = $\scriptsize \dfrac{ `r xxx[3,2]`}{`r xxx[3,3]`}$ = `r round(xxx[3,4], 7)`
+  + `r xxx[4,1]` = $\scriptsize \dfrac{ `r xxx[4,2]`}{`r xxx[4,3]`}$ = `r round(xxx[4,4], 7)`
+  + `r xxx[5,1]` = $\scriptsize \dfrac{ `r xxx[5,2]`}{`r xxx[5,3]`}$ = `r round(xxx[5,4], 7)`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Por lo tanto la comunidad con una proporción más alta no es `r comu`
+
+   
+* Todas las demás respuestas son correctas.
+
+<br>   
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: Tipo Variables
+extype: schoice
+exsolution: 10000
+exshuffle: 5

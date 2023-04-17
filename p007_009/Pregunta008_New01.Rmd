@@ -1,0 +1,68 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+xn <- sample(seq(5, 7), 1)
+xmean <- sample(seq(60, 70, by = 0.1), 1)
+xsd <-  xmean *0.20
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+dat <- SimCon(sn= xn, smean= xmean, ssd= xsd, lolimi = 40, uplimit= 99, sdec= 0)
+``` 
+Calcule la varianza ($S^2$) y la desviación estándar (DE) de los siguientes valores:
+
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+knitr::kable(paste(dat, collapse = ", "), col.names = NULL)
+``` 
+
+¿Cuál de las siguientes respuestas es <font size="5"> **CORRECTA** </font>?
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+knitr::kable(paste(dat, collapse = ", "), col.names = NULL)
+``` 
+
+Answerlist
+----------
+* $S^2$ = `r round(var(dat), 1)`, DE = `r round(sd(dat), 1)`
+* $S^2$ = `r round(var(dat)^2, 1)`, DE = `r round(sd(dat), 1)`
+* $S^2$ = `r round(var(dat), 1)`, DE = `r round(sqrt(sd(dat)), 3)`
+* $S^2$ = `r round(var(dat), 1)/2`, DE = `r round(sd(dat), 1)/2`
+* $S^2$ = `r round(var(dat)^2, 1)`, DE = `r round(sqrt(sd(dat)), 3)`
+
+
+Solution
+========
+* Para obtener la media se debe calcular:
+
+ $\scriptsize \overline{\textrm{X}} = \dfrac{`r dat[1]` + `r dat[2]` + \cdots + `r dat[length(dat)]`}{`r length(dat)`} = `r round(mean(dat), 1)`$
+ 
+<br>
+
+* Para obtener la varianza se debe calcular la *la suma de lo lejos de la media que está cada valor, elevado al cuadrado* (suma de cuadrados). Concretamente:
+
+
+Suma de Cuadrados = $(`r dat[1]` - `r round(mean(dat), 1)`)^{2} +  \ldots + (`r dat[1]` - `r round(mean(dat), 1)`)^{2} = `r round(sum((dat-mean(dat))^2), 1)`$
+
+Var = $S^2 = \dfrac{`r round(sum((dat-mean(dat))^2), 1)`}{`r length(dat)`- 1} = `r round(var(dat), 1)`$
+
+<br> 
+
+* La Desviación Estándar (DE) es simplemente la raíz cuadrada de la varianza:
+DE = $\sqrt{`r round(var(dat), 1)`} = `r round(sd(dat), 1)`$
+
+
+Answerlist
+----------
+* Respuesta Correcta
+* Respuesta FALSA
+* Respuesta FALSA
+* Respuesta FALSA
+* Respuesta FALSA
+
+
+
+Meta-information
+================
+exname: Descriptives numerical
+extype: schoice
+exsolution: 10000
+exshuffle: 5

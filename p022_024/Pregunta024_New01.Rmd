@@ -1,0 +1,111 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+options(scipen=999)
+xconfi <- sample(c(95, 99), 1)
+xsize <- sample(c(90, 95, 99), 1)
+xpreci <- sample(c(0.01, 0.02, 0.025, 0.05, 0.1), 1)
+
+xN <- sample(seq(5000, 6000), 1)
+xp <- sample(seq(0.11, 0.19, 0.001), 1)
+xn <- round(xN*xp, 0)
+iclo <- round(xp - round(qnorm(1-((1-(xconfi/100))/2)), 2) * sqrt(xp*(1-xp)/xN), 3)
+icup <- round(xp + round(qnorm(1-((1-(xconfi/100))/2)), 2) * sqrt(xp*(1-xp)/xN), 3)  
+
+iclo90 <- round(xp - 1.64 * sqrt(xp*(1-xp)/xN), 3)
+icup90 <- round(xp + 1.64 * sqrt(xp*(1-xp)/xN), 3)  
+
+
+xSSize <- round(round(qnorm((1-((1-(xsize/100))/2))), 2)^2 * xp * (1-xp) / xpreci^2, 3)
+
+```
+Observe las siguientes fórmulas para:
+
+* Calcular el intervalo de confianza de una proporción
+
+${\scriptsize
+\begin{eqnarray}
+\text{IC} = `r xp` \pm  `r round(qnorm(1-((1-(xconfi/100))/2)), 2)` * \sqrt{\frac{ `r xp` * (1- `r xp`)}{`r xN`}} =  \lbrace `r iclo`; `r icup` \rbrace
+\end{eqnarray}
+}$
+
+* Calcular el tamaño de muestra para estimar una proporción
+
+${\scriptsize
+\begin{eqnarray}
+\text{n} =  \frac{`r round(qnorm(1-((1-(xsize/100))/2)), 2)`^2* `r xp`*(1-`r xp`)}{`r xpreci`^2} = `r format(round(xSSize, 3), nsmall= 3, digits=3)` \simeq  `r ceiling(xSSize)`
+\end{eqnarray}
+}$
+
+¿Cuál de las siguientes respuestas es <font size="5"> **FALSA**</font>?
+
+Answerlist
+----------
+* En la fórmula del intervalo de confianza el número de personas que presenta característica de interés ($n_c$) = `r ceiling(xn*1.5)`
+* En la fórmula del intervalo de confianza se están haciendo los cálculos para tener un confianza del `r xconfi`%
+* En la fórmula del tamaño de muestra, se quiere una confianza del `r xsize`%
+* En la fórmula del tamaño de muestra, la precisión es de $\pm$ `r xpreci*100`%
+* En la fórmula del intervalo de confianza, si se quisiera una confianza menor, por ejemplo del 90%, el intervalo sería mas estrecho (es decir, límite inferior = `r iclo90` y el límite superior = `r icup90`)
+
+
+
+Solution
+========
+* En la fórmula del intervalo de confianza el número de personas que presenta característica de interés ($n_c$) = `r ceiling(xn*1.5)`
+
+Es FALSO ya que una proporción "p" se obtiene
+${\scriptsize
+\begin{eqnarray}
+\text{p} &=& \dfrac{n_c}{n} = `r xp` = \dfrac{n_c}{`r xN`}
+\end{eqnarray}
+}$
+
+Despejando $n_c = `r xp` * `r xN` \thickapprox  `r xn`$
+
+-----
+
+* En la fórmula del intervalo de confianza se están haciendo los cálculos para tener un confianza del `r xconfi`%
+
+Es correcto ya que el valor de **z** utilizado es `r round(qnorm(1-((1-(xconfi/100))/2)), 2)`
+
+-----
+
+* En la fórmula del tamaño de muestra, se quiere una confianza del `r xsize`%
+
+Es correcto ya que el valor de **z** utilizado es `r round(qnorm(1-((1-(xsize/100))/2)), 2)`
+
+-----
+
+* En la fórmula del tamaño de muestra, la precisión es de $\pm$ `r xpreci*100`%
+
+Es correcto ya que en el denominar hay el valor `r xpreci`
+
+-----
+
+* En la fórmula del intervalo de confianza, si se quisiera una confianza menor, por ejemplo del 90%, el intervalo sería mas estrecho (es decir, límite inferior = `r iclo90` y el límite superior = `r icup90`)
+
+Es correcto ya que 
+
+${\scriptsize
+\begin{eqnarray}
+\text{IC} = `r xp` \pm  1,64 * \sqrt{\frac{ `r xp` * (1- `r xp`)}{`r xN`}} =  \lbrace `r iclo90`; `r icup90` \rbrace
+\end{eqnarray}
+}$
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: XXXXX
+extype: schoice
+exsolution: 10000
+exshuffle: 5

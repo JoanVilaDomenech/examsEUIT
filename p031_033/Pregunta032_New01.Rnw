@@ -1,0 +1,61 @@
+<<echo=FALSE, results=hide>>=
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+options(OutDec=",")
+@
+
+\begin{question}
+\
+\\
+Observe la f\'ormula para calcular el intervalo de confianza de la diferencia entre proporciones:
+
+${\scriptsize
+\begin{eqnarray}
+\text{IC} & = & \color{red}{|p_A - p_B|} \pm \color{blue}{z_{\alpha/2} \sqrt{\frac{ p_A (1- p_A)}{n_A}+ \frac{p_B (1- p_B)}{n_B}}}
+& = & \color{red}{|diferencia|} \pm \color{blue}{\text{error en la estimación}}
+\end{eqnarray}
+}$
+
+Si el error en la estimación (la zona marcada de color azul) es muy grande el intervalo de confianza será muy grande (será muy amplio) y por lo tanto se será poco preciso.\\
+\
+\\
+¿Cu\'al de las siguientes respuestas es \textbf{\large FALSA}?
+
+\begin{answerlist}
+    \item Las proporciones cercanas al 0,5 son las que conllevan errores en la estimación más pequeñas
+    \item Manteniendo constante todos los demás valores, cuando mayor sea el tamaño de muestra más preciso se será (el intervalo será más estrecho)
+    \item Manteniendo constante todos los demás valores, con una confianza del 99\% se será menos preciso que con una confianza del 90\%
+    \item La diferencia entre proporciones se calcula en valor absoluto, por lo tanto $|p_A - p_B| = |p_B - p_A|$
+    \item El valor máximo que puede alcanzar ``$p_A (1- p_A)$'' es 0,25
+\end{answerlist}
+
+\end{question}
+
+\begin{solution}
+\begin{itemize}
+\item Las proporciones cercanas al 0,5 son las que conllevan errores en la estimación más pequeñas es \textbf{FALSO}\\
+Si se multiplica 0,5 * (1-0,5) = 0,25. Cualquier otro valor más pequeño o más grande, p.e. 0,6 * (1-0,6) = 0,24. El cálculo de p * (1-p) está en el numerador. Un valor grande (la proporción de 0,5 es la que produce el valor más grande posible) conllevan errores en la estimación más \textbf{grandes}
+\item Manteniendo constante todos los demás valores, cuando mayor sea el tamaño de muestra más preciso se será es \textbf{Correcto}\\
+El tamaño de muestra está en el denominador. Cuanto mayor sea, más pequeño será en resultado de dentro de la raíz y por lo tanto el error en la estimación (la zona azul) será más pequeño y en consecuencia se será más preciso.
+\\
+Es importante entender que si el intervalo es más estrecho (es decir, lo que se tiene que sumar y restar es más pequeño), el resultado es que se es más preciso.
+
+\item Manteniendo constante todos los demás valores, con una confianza del 99\% se será menos preciso que con una confianza del 90\% es \textbf{Correcto}\\
+Multiplicar por 2,58 (IC99\%) conllevará una zona azul más grande que multiplicar por 1,64 (IC90\%) y por lo tanto  se será menos preciso.
+\item La diferencia entre proporciones se calcula en valor absoluto, por lo tanto $|p_A - p_B| = |p_B - p_A|$ es \textbf{Correcto}\\
+\item El valor máximo que puede alcanzar ``$p_A (1- p_A)$'' es 0,25 es \textbf{Correcto}\\
+El valor máximo que puede alcanzar  es cuando p = 0,5. Cualquier otro valor p.e. 0,4 * (1-0,4) = 0,24 será más pequeño
+\end{itemize}
+
+\begin{answerlist}
+  \item Respuesta FALSA
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+\end{answerlist}
+\end{solution}
+
+\exname{Pregunta XXXX}
+\extype{schoice}
+\exsolution{10000}
+\exshuffle{5}

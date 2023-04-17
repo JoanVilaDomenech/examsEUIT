@@ -1,0 +1,166 @@
+<<echo=FALSE, results=hide>>=
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+options(OutDec=",")
+options(OutDec=",")
+n <- sample(750:850, 1)
+dat1 <- data.frame(id=1:(round(n/2)*1.01), treat = "Intervention")
+dat2 <- data.frame(id=seq(nrow(dat1)+1, max(n)), treat = "Control")
+dat1$pass <- SimCat(nrow(dat1), sample(seq(0.75, 0.85, 0.001), 1))
+dat2$pass <- SimCat(nrow(dat2), sample(seq(0.50, 0.60, 0.001), 1))
+dat <- rbind(dat1, dat2)
+
+r1 <- paste("La casilla ``d'' de la tabla = ", round(sum(dat$treat=="Control" & dat$pass ==2)*0.8), sep="")
+r2 <- paste("Aprobaron ", sum(dat$pass==1), " estudiantes", sep="")
+r3 <- paste("No aprobaron ", sum(dat$pass==2), " estudiantes", sep="")
+r4 <- paste("Para saber el porcentaje de estudiantes que aprobó en el grupo control se debe calcular $\\dfrac{", sum(dat$treat=="Control" & dat$pass ==1), "}{", sum(dat$treat=='Control'), "} * 100$", sep="")
+r5 <- paste("b + d = ", sum(dat$pass==2), sep="")
+@
+
+\begin{question}
+\
+\\
+\\
+Como se ha explicado en clase una tabla de 2x2 (2 filas y 2 columnas) puede escribirse de 8 formas diferentes, dependiendo de lo que se ponga en las columnas y en las filas. \\
+\
+\\
+También se ha explicado en clase que, para calcular Riesgo Relativo (RR) y Odds Ratio (OR) ayuda mucho a escribir la tabla poniendo en las columnas lo más parecido a \textit{enfermedad} o \textit{resultado} y en las filas lo más parecido a \textit{exposición}.\\
+\
+\\
+Si la tabla se construye de esta manera, entonces:
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lcccc}
+\hline 
+& & \multicolumn{2}{c}{Resultado/enfermedad} &  \\
+& & (+) & (-) & TOTAL \\ 
+\hline 
+& (+) & a & b & a+b \\
+Expuesto & &  &  &  \\
+& (+) & c & d & c+d \\
+\hline 
+ & &  &  &  \\
+\multicolumn{2}{c}{TOTAL} & a+c & b+d & a+b+c+d \\
+\hline 
+\hline 
+\end{tabular} 
+\end{center}
+\end{table}
+
+Ordenada la tabla de esta manera:
+
+${\scriptsize
+\begin{eqnarray}
+\text{OR} & = & \dfrac{a/c}{b/d} \nonumber\\
+& &\nonumber\\
+\text{RR} & = & \dfrac{\dfrac{a}{a+b}}{\dfrac{c}{c+d}} \nonumber
+\end{eqnarray}
+}$
+\
+\\
+\\
+En un estudio participaron \Sexpr{nrow(dat)} estudiantes que se asignaron aleatóriamente a uno de los grupos siguientes:
+\begin{itemize}
+\item Grupo Intervención: formado por \Sexpr{sum(dat$treat=="Intervention")} estudiantes. En este grupo, además de las clases habituales, se les exigió que tras cada clase respondieran 3 preguntas relativas al tema explicado
+\item Grupo Control: formado por el resto de estudiantes. En este grupo sólo recibieron las clases habituales.
+\end{itemize}
+
+El objetivo del estudio fue saber cuanto más riesgo de aprobar un examen (el examen era idéntico para los dos grupos) tienen los estudiantes asignados al grupo de intervención respecto al grupo control.\\
+\
+\\
+Aprobaron el examen \Sexpr{sum(dat$treat=="Intervention" & dat$pass ==1)} estudiantes del grupo intervención y \Sexpr{sum(dat$treat=="Control" & dat$pass ==1)} del grupo control.\\
+\
+\\
+¿Cu\'al de las siguientes respuestas es \textbf{\large FALSA}?
+
+
+\begin{answerlist}
+\item La casilla ``d'' de la tabla = \Sexpr{round(sum(dat$treat=="Control" & dat$pass ==2)*0.8)}
+\item Aprobaron \Sexpr{sum(dat$pass==1)} estudiantes
+\item No aprobaron \Sexpr{sum(dat$pass==2)} estudiantes
+\item Para saber el porcentaje de estudiantes que aprobó en el grupo control se debe calcular $\scriptsize \dfrac{\Sexpr{sum(dat$treat=="Control" & dat$pass ==1)}}{\Sexpr{sum(dat$treat=='Control')}} * 100$
+\item b + d = \Sexpr{sum(dat$pass==2)}
+\end{answerlist}
+
+\end{question}
+
+\
+\\
+\\
+ \vspace{4cm}
+\begin{solution}
+\
+\\
+La tabla correcta es: 
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lcccc}
+\hline 
+& & \multicolumn{2}{c}{Aprobar} &  \\
+& & Si & No & TOTAL \\ 
+\hline 
+& Intervención & a & b & a+b \\
+Grupo & &  &  &  \\
+& Control & c & d & c+d \\
+\hline 
+ & &  &  &  \\
+\multicolumn{2}{c}{TOTAL} & a+c & b+d & a+b+c+d \\
+\hline 
+\hline 
+\end{tabular} 
+\end{center}
+\end{table}
+\
+\\
+
+-----------------------------------
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lcccc}
+\hline 
+& & \multicolumn{2}{c}{Aprobar} &  \\
+& & Si & No & TOTAL \\ 
+\hline 
+& Intervención & \Sexpr{sum(dat$treat == "Intervention" & dat$pass==1)} & \Sexpr{sum(dat$treat == "Intervention" & dat$pass==2)} & \Sexpr{sum(dat$treat == "Intervention")} \\
+Grupo & &  &  &  \\
+& Control & \Sexpr{sum(dat$treat == "Control" & dat$pass==1)} & \Sexpr{sum(dat$treat == "Control" & dat$pass==2)} & \Sexpr{sum(dat$treat == "Control")}\\
+\hline 
+ & &  &  &  \\
+\multicolumn{2}{c}{TOTAL} & \Sexpr{sum(dat$pass == 1)} & \Sexpr{sum(dat$pass == 2)} & \Sexpr{nrow(dat)} \\
+\hline 
+\hline 
+\end{tabular} 
+\end{center}
+\end{table}
+\
+\\
+Aprobaron: \Sexpr{sum(dat$treat == "Intervention" & dat$pass==1)} + \Sexpr{sum(dat$treat == "Control" & dat$pass==1)} = \Sexpr{sum(dat$pass==1)}\\
+\
+\\
+Si había \Sexpr{nrow(dat)} estudiantes, de los cuales \Sexpr{sum(dat$treat== "Intervention")} se asignaron al grupo intervención, es que en el grupo Control se asignaron \Sexpr{nrow(dat)} - \Sexpr{sum(dat$treat== "Intervention")} = \Sexpr{sum(dat$treat== "Control")} estudiantes. Si de estos aprobó \Sexpr{sum(dat$treat== "Control" & dat$pass==1)} , es que suspendieron \Sexpr{sum(dat$treat== "Control")} - \Sexpr{sum(dat$treat== "Control" & dat$pass==1)} = \Sexpr{sum(dat$treat== "Control" & dat$pass==2)} estudiantes.\\
+\
+\\
+Si en el grupo intervención aprobaron \Sexpr{sum(dat$treat== "Intervention" & dat$pass==1)}, es que suspendieron \Sexpr{sum(dat$treat== "Intervention")} - \Sexpr{sum(dat$treat== "Intervention" & dat$pass==1)} = \Sexpr{sum(dat$treat== "Intervention" & dat$pass==2)}. Por tanto \Sexpr{sum(dat$treat== "Intervention" & dat$pass==2)} + \Sexpr{sum(dat$treat== "Control" & dat$pass==2)}  = \Sexpr{sum(dat$pass==2)} \\
+\
+\\
+Para saber el porcentaje de estudiantes que aprobó en el grupo control se debe calcular $\scriptsize \dfrac{\Sexpr{sum(dat$treat=="Control" & dat$pass ==1)}}{\Sexpr{sum(dat$treat=='Control')}} * 100$\\
+\
+\\
+b (= \Sexpr{sum(dat$treat== "Intervention" & dat$pass==2)}) + d (= \Sexpr{sum(dat$treat== "Control" & dat$pass==2)}) = \Sexpr{sum(dat$pass==2)}
+
+\begin{answerlist}
+  \item Respuesta FALSA
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+\end{answerlist}
+\end{solution}
+
+\exname{Pregunta 34}
+\extype{schoice}
+\exsolution{10000}
+\exshuffle{5}
+
+

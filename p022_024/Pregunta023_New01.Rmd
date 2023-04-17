@@ -1,0 +1,108 @@
+Question
+========
+```{r data generation, echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+options(scipen=999)
+pbiblio <- sample(seq(0.065, 0.085, 0.001), 1)
+xpreci1 <- 0.01
+xpreci2 <- 0.02
+xpreci5 <- 0.05
+xn01 <- ceiling(1.96^2 * pbiblio * (1-pbiblio) / xpreci1^2)
+xn02 <- ceiling(1.96^2 * pbiblio * (1-pbiblio) / xpreci2^2)
+xn05 <- ceiling(1.96^2 * pbiblio * (1-pbiblio) / xpreci5^2)
+```
+Supóngase que de una población "infinita" <sup>(1)</sup> se quiere estimar con un nivel de confianza de 95% y una precisión de $\pm$ 5% la proporción de sujetos $>$ de 64 años que darán positivo en un cribaje de demencia. La bibliografía sugiere que aproximadamente el `r pbiblio*100`% de sujetos de esta edad dan positivo.
+
+<h1 style="font-size:10px;"><sup>(1)</sup>Cuando una población es pequeña, se debe hacer una corrección que se conoce como "corrección por finitud de población", a la fórmula explicada en clase. Pero este concepto se halla más allá de los objetivos de este curso. Por esta razón en el enunciado se escribe "infinita" y se debe aplicar la fórmula explicada en clase.</h1>
+
+¿Cuál de las siguientes respuestas es <font size="5">**FALSA**</font>?
+
+Answerlist
+----------
+* `r round(xn01*1.15, 0)` individuos $>$ de 64 años son suficientes para estimar con una confianza del 95% y una precisión de $\pm$ 1%, el porcentaje que darán positivo en un cribaje de demencia. Este porcentaje se supone que será algún valor cercano al `r pbiblio*100`
+* `r xn02` individuos $>$ de 64 años son suficientes para estimar con una confianza del 95% y una precisión de $\pm$ 2%, el porcentaje que darán positivo en un cribaje de demencia. Este porcentaje se supone que será algún valor cercano al `r pbiblio*100`
+* `r xn05` individuos $>$ de 64 años son suficientes para estimar con una confianza del 95% y una precisión de $\pm$ 5%, el porcentaje que darán positivo en un cribaje de demencia. Este porcentaje se supone que será algún valor cercano al `r pbiblio*100`
+* Manteniendo constante lo demás, una precisión pequeña requiere mayor tamaño de muestra que una precisión grande, por ejemplo una precisión del 1% requiere más tamaño de muestra que una precisión del 5%
+* Manteniendo constante lo demás, una proporción pequeña requiere menor tamaño de muestra que una proporción grande, por ejemplo una proporción de `r sample(seq(0.07, 0.15, 0.01), 1)` requiere menos tamaño de muestra que proporción de `r sample(seq(0.27, 0.45, 0.01), 1)`
+
+
+Solution
+========
+Para calcular el tamaño de muestra para estimar una proporción se debe conocer:
+
+* Con que precisión quiere realizar la estimación. Para resolver este ejercicio se tienen que realizar los cálculos para tres precisiones:
+  * `r xpreci1` $\Longrightarrow$ `r xpreci1*100`%
+  * `r xpreci2` $\Longrightarrow$ `r xpreci2*100`%
+  * `r xpreci5` $\Longrightarrow$ `r xpreci5*100`%
+* Aproximadamente cuál es el la proporción que espera encontrar. En este ejercicio los cálculos se tienen que realizar suponiendo una proporción de `r pbiblio` (`r pbiblio*100`%)
+* Cuando haya realizado el estudio, con que confianza querrá dar la estimación. En este ejercicio los cálculos se tienen que realizar suponiendo una confianza del 95%
+
+Con esta información se tiene que aplicar la fórmula:
+
+${\scriptsize
+\begin{eqnarray}
+\text{n} &=& z_{\alpha/2}^2 \dfrac{p * ( 1 - p)}{i^2} \thickapprox \text{redondear entero superior}
+\end{eqnarray}
+}$
+
+
+-----
+
+Precisión 1%:
+
+${\scriptsize
+\begin{eqnarray}
+\text{n} &=& 1.96^2 \dfrac{`r pbiblio` * ( 1 - `r pbiblio`)}{`r xpreci1`^2} \thickapprox   `r xn01`
+\end{eqnarray}
+}$
+
+-----
+
+Precisión 2%:
+
+${\scriptsize
+\begin{eqnarray}
+\text{n} &=& 1.96^2 \dfrac{`r pbiblio` * ( 1 - `r pbiblio`)}{`r xpreci2`^2} \thickapprox   `r xn02`
+\end{eqnarray}
+}$
+
+-----
+
+Precisión 5%:
+
+${\scriptsize
+\begin{eqnarray}
+\text{n} &=& 1.96^2 \dfrac{`r pbiblio` * ( 1 - `r pbiblio`)}{`r xpreci5`^2} \thickapprox   `r xn05`
+\end{eqnarray}
+}$
+
+
+-----
+
+* Manteniendo constante lo demás, una precisión pequeña requiere mayor tamaño de muestra que una precisión grande, por ejemplo una precisión del 1% requiere más tamaño de muestra que una precisión del 5%
+
+La precisión va en el denomiador. Si es pequeña el resultado de aplicar la fórmula es más grande (es decir, mayor tamaño de muestra).
+
+-----
+
+* Manteniendo constante lo demás, una proporción pequeña requiere menor tamaño de muestra que una proporción grande, por ejemplo una proporción de `r sample(seq(0.07, 0.15, 0.01), 1)` requiere menos tamaño de muestra que proporción de `r sample(seq(0.27, 0.45, 0.01), 1)`
+
+La proporción va en el denominador. Valores cercanos a 0.5 requieren más tamaño de muestra que valores de proporción más pequeños. 
+
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: XXXXX
+extype: schoice
+exsolution: 10000
+exshuffle: 5

@@ -1,0 +1,40 @@
+<<echo=FALSE, results=hide>>=
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+options(OutDec=",")
+
+@
+
+\begin{question}
+\
+\\
+Hola
+
+
+\begin{answerlist}
+  \item AA
+  \item BB
+  \item CC
+  \item DD
+  \item EE
+\end{answerlist}
+
+\end{question}
+
+\begin{solution}
+\
+\\
+Hello
+
+\begin{answerlist}
+  \item Respuesta FALSA
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+\end{answerlist}
+\end{solution}
+
+\exname{Pregunta XXXX}
+\extype{schoice}
+\exsolution{10000}
+\exshuffle{5}

@@ -1,0 +1,80 @@
+Question
+========
+En un estudio realizado por Dumville et al<sup>(1)</sup> los investigadores presentan los resultados de un ensayo clínico en el que analizaban el uso de larvas en el tratamiento de las úlceras venosas en las piernas.
+
+
+<h1 style="font-size:10px;"><sup>(1)</sup>Dumville J, Worthy G, Bland M, Cullum N, Dowson C, Iglesias C, Mitchell J, Nelson A, O Soares M, Torgerson D. Larval therapy for leg ulcers (VenUS II): randomised controlled trial. BMJ 2009;338:b773 doi:10.1136/bmj.b773 </h1>
+
+Las características de los participantes, según en grupo asignado, se muestra en la siguiente tabla extraída del artículo:
+
+
+```{r, echo=FALSE, results='hide'}
+include_supplement("larval.png")
+```
+
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("larval.png")
+```
+
+
+
+Observe que se comparaban 3 tipos de tratamiento:
+
+* Larvas sueltas (Loose larvae)
+* Larvas empaquetadas (Bagged larvae)
+* Hydrogel
+
+
+Y que las características de los pacientes que se muestran son:
+
+* Sexo (*men*)
+* Edad en años (*Mean (SD) age (years)*)
+* Cm<sup>2</sup>  del área de la úlcera (*Area of ulcer (cm<sup>2</sup>)*) en dos categorías
+  +  <span>&le;</span> 5
+  +  <span>&gt;</span>5
+* Cm<sup>2</sup> del área de la úlcera medido cuantitativamente (*Median (range) area of ulcer (Cm<sup>2</sup>)*)
+* Meses de evolución de la úlcera (*Duration of ulcer (months)*) 
+  +  <span>&le;</span> 6
+  + <span>&gt;</span> 6
+* Meses de evolución de la úlcera medido cuantitativamentes (*Duration of ulcer (months)*) 
+* Tratamiento aplicado a la presión del Índice Tobillo Brazo (*ABPI, treatment*) en tres categorías:
+  + Valores <span>&ge;</span> 0.8 tratados con alta compresión (*high compression*)
+  + Valores <span>&ge;</span> 0.8 tratados con baja o sin compresión (*lower or no compression*)
+  + Valores entre 0.6-0.8
+
+¿Cuál de las siguientes respuestas es <font size="5"> **FALSA** </font>?
+
+Answerlist
+----------
+* La variable "Tratamiento" es una variable categórica (o cualitativa) ordinal
+* La variable "Tratamiento aplicado a la presión del Índice Tobillo Brazo" es una variable categórica (o cualitativa) ordinal
+* La variable "Meses de evolución de la úlcera" se han medio de forma dicotómica y de forma numérica
+* La "edad" es una variable numérica (o cuantitativa)
+* En este estudio, la variable que mide el sexo, es una variable dicotómica
+* Hay dos variables numéricas: Edad y Duración de la úlcera en meses
+* Si la edad se categorizara en "<span>&lt;</span>18", "18-30", "<span>&ge;</span>31", se estaría tranformando una variable numérica en una categórica
+
+Solution
+========
+* La variable "Tratamiento" no se puede poner por orden, por lo tanto es categórica **nominal**
+
+* Todas las demás respuestas son correctas.
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: Tipo Variables
+extype: schoice
+exsolution: 1000000
+exshuffle: 5

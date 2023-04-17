@@ -1,0 +1,76 @@
+Question
+========
+```{r echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+library(kableExtra)
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+
+xn <- sample(seq(18,23), 1)
+mydat <- SimCon(sn = xn, smean = 47, ssd = 24, lolimit = 20,uplimit = 100, sdec = 0)
+xmean <- format(mean(mydat), nsmall = 2, digits = 2)
+xsd <- format(sd(mydat), nsmall = 2, digits = 2)
+```
+Se han medido los valores Barthel (una escala que mide dependencia) a `r length(mydat)` participantes de un estudio. Los valores obtenidos son los siguientes:
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+kable(paste(mydat, collapse = ", "), col.names = NULL)
+``` 
+
+La media ($\overline{X}$) de estos valores = `r xmean` y la desviación estándar (DE) = `r xsd`
+
+¿Cuál de las siguientes respuestas es <font size="5"> **FALSA** </font>?
+
+```{r echo = FALSE, results = "hide", comment=FALSE}
+eeX <- sd(mydat)/sqrt(length(mydat))
+xeeX <- format(eeX^2, digits = 2, nsmall = 2)
+zmydat <- format(round(scale(mydat), 3), digits = 3, nsmall = 3)
+```
+
+
+Answerlist
+----------
+* El error estándar de esta media ($EE_{\overline{X}}$) = `r xeeX`
+* Si se estandarizara estos valores se obtendría
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+kable(paste(zmydat, collapse = ", "), col.names = NULL)
+``` 
+* Si se estandariza, los valores que están por encima de la ($\overline{X}$) serán positivos, los valores por debajo de la ($\overline{X}$) serán negativos y si coinciden con la media serán = 0.
+* La varianza ($S^2$) de estos datos = $\small `r xsd`^2$
+* La media ($\overline{X}$) de los valores estandarizados será = 0 y la Desviación Estándar (DE) = 1
+
+
+Solution
+========
+ Para estandarizar los valores se debe aplicar a cada valor la siguiente operación:
+$zx_i = \frac{x_i - \overline{X}}{DE}$
+
+A modo de ejemplo a continuación se muestran los dos primeros valores estandarizados:
+
+* $\scriptsize zx_1 = \dfrac{`r mydat[1]` - `r xmean`}{`r xsd`} = `r zmydat[1]`$
+* $\scriptsize zx_2 = \dfrac{`r mydat[2]` - `r xmean`}{`r xsd`} = `r zmydat[2]`$
+
+<br>
+
+Para obener el $EE_{\overline{X}}$ = $\scriptsize \dfrac{DE}{\sqrt{n}} = \scriptsize \dfrac{`r xsd`}{\sqrt{`r length(mydat)`}} = `r format(eeX, digits = 3, nsmall = 3)`$
+
+<br>
+
+Todas las demás respuestas son correctas.
+
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: DescripNum
+extype: schoice
+exsolution: 10000
+exshuffle: 5

@@ -1,0 +1,120 @@
+Question
+========
+```{r , echo = FALSE, results = "hide", comment=FALSE}
+options(OutDec=",")
+options(scipen=999)
+library(gdata)
+options(OutDec= ",") 
+xn <- sample(seq(12,16), 1)
+dat <- data.frame(trig=sample(seq(114, 438), xn))
+dat <- data.frame(trig=dat[order(dat$trig), ])
+# poso un repe
+dat$trig[4] <- dat$trig[5]
+
+dat$ztrig<-with(dat,round((trig-mean(dat$trig)) / sd(dat$trig),2) )
+dat$acum <- NULL
+for (i in 1:nrow(dat)){
+  dat$acum[i] <- round(sum(dat$trig<=dat$trig[i]) / nrow(dat), 3)
+}
+
+dat$expe<-with(dat,round(pnorm(ztrig, mean=0, sd=1, lower.tail = TRUE, log.p = FALSE),3))
+dat$dif1<-with(dat,round(acum-expe,6))
+
+dat$lagacum <- c(0, dat$acum[1:nrow(dat)-1])
+dat$dif2<-with(dat,round(lagacum-expe,6))
+dat <- remove.vars(dat, c("lagacum"), info=FALSE)
+
+maxdif <- max(c(abs(dat$dif1), abs(dat$dif2)))
+xz <- round(sqrt(nrow(dat)) * maxdif, 5)
+library(kableExtra)
+```
+Se han medido los valores de triglicéridos a `r nrow(dat)` individuos. Los valores obtenidos son: 
+<p style="text-align: center;">
+```{r , echo = FALSE, results = 'asis', comment=FALSE}
+cat(dat$trig)
+```
+</p>
+A continuación encontrará una tabla donde se han realizado los cálculos necesarios para realizar una prueba de Kolmogorov-Smirnov (K-S):
+
+```{r echo = FALSE, results = 'asis', comment=FALSE}
+
+dat %>%
+  kbl(caption = "") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+``` 
+
+
+
+Donde:
+
+* **trig** los valores de triglicéridos ordenados de menor a mayor
+* **ztrig** los valores de triglicéridos estandarizados
+* **acum** proporción de valores <span>&le;</span> "trig" (o de <span>&le;</span> "ztrig") 
+* **expe** proporción de valores <span>&le;</span> "trig" (o de <span>&le;</span> "ztrig") esperados si siguiera una distribución normal.
+* **dif1** Diferencia: $acum_i$ - $expe_i$ 
+* **dif2** Diferencia: $acum_{i-1}$ - $expe_i$
+
+Una vez hechos estos cálculos se debe calcular un valor ***z*** y comparar el valor obtenido, en la siguiente tabla:
+
+```{r, echo=FALSE, results='hide'}
+include_supplement("tabKS.png")
+```
+
+```{r, echo=FALSE, out.width="60%"}
+knitr::include_graphics("tabKS.png")
+```
+
+¿Cuál de las siguientes respuestas es <font size="5"> **FALSA**</font>?
+
+Answerlist
+----------
+* Si una variable estandarizada siguiera una distribución normal, se **esperaría** que el `r dat$acum[7]*100`% de los valores fueran <span>&le;</span> `r dat$ztrig[7]` 
+* El valor de ***z*** = `r xz`
+* Si se obtiene un valor de **z** es <span>&ge;</span> 1,3581, se concluirá es poco probable (<span>&le;</span> 0,05) que los valores de triglicéridos se hayan obtenido de una población que sigue una distribución normal
+* Si se sitúa el nivel de significación en valores <span>&le;</span> 0,05, el valor de *z* no alcanza el nivel crítico para declarar significación estadística
+* En la tabla donde se han realizado los cálculos de la prueba de K-S se indica que el `r dat$acum[7]*100`% de los valores de triglicéridos son <span>&le;</span> `r dat$trig[7]` 
+
+
+Solution
+========
+$\begin{eqnarray}
+\text{z} &=& \sqrt{\text{n}}* \text{máx}(\mid dif \mid) \nonumber \\
+ &=& \sqrt{\text{`r nrow(dat)`}} * `r maxdif` = `r xz` \nonumber
+\end{eqnarray}$
+
+-----
+
+1,3581 es el punto de corte tradicional (que se corresponde con el nivel de significación  <span>&le;</span> 0,05) para declarar que es poco probable que los valores (en este ejercicio, los triglicéridos) se hayan obtenido de una población que sigue una distribución normal
+
+----
+
+El valor de ***z*** = `r xz` y queda lejos del nivel de significación en valores <span>&le;</span> 0,05, por lo tanto  no alcanza significación estadística
+
+-----
+
+`r dat$acum[7]*100`% es el valor que hay en la columna **acum** de la fila donde está el valor `r dat$trig[7]`
+
+-----
+
+Observe que en la fila donde **ztrig** = `r dat$ztrig[7]`:
+
+* se ha "observado" (acum) que el `r dat$acum[7]*100`% son <span>&le;</span> `r dat$ztrig[7]`
+
+* si siguiera una distribución normal se "**esperaría**" (expe) que el `r dat$expe[7]*100`% sean <span>&le;</span> `r dat$ztrig[7]`
+
+Answerlist
+----------
+* Respuesta FALSA
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+* Respuesta Correcta
+
+
+
+Meta-information
+================
+exname: XXXXX
+extype: schoice
+exsolution: 10000
+exshuffle: 5

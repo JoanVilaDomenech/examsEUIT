@@ -1,0 +1,24 @@
+\documentclass[a4paper,titlepage,12pt]{article}
+\usepackage{longtable}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,top=2cm,bottom=1.5cm,left=2cm,right=2cm]{geometry}
+\usepackage{float}
+
+
+\begin{document}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lrrrrrrrr}
+\hline
+
+\hline
+\textbf{Nivel de significación}	& · · · · · & 0,2	& 0,1 &	0,05	& 0,02 &	0,01 &	0,002& · · · · · \\
+ & & & & & & & & \\
+\textbf{Valor de ``z''} & · · · · · &	1,0727	&1,2238	&1,3581&	1,5174	&1,6276&	1,8585 & · · · · · \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\end{document}

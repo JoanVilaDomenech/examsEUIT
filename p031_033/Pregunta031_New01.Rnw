@@ -1,0 +1,129 @@
+<<echo=FALSE, results=hide>>=
+source("/Users/jvila/Dropbox/euit/common/exerc/examsEUIT/simulV02.r")
+options(OutDec=",")
+n <- sample(1200:1600, 1)
+dat1 <- data.frame(id=1:(round(n/2)*1.01), treat = "New")
+dat2 <- data.frame(id=seq(nrow(dat1)+1, max(n)), treat = "Old")
+dat1$death <- SimCat(nrow(dat1), sample(seq(0.04, 0.05, 0.001), 1))
+dat2$death <- SimCat(nrow(dat2), sample(seq(0.09, 0.1, 0.001), 1))
+dat <- rbind(dat1, dat2)
+
+#############################
+tab <- with(dat, table(treat, death))
+ptab <- round(prop.table(tab, margin = 1)*100, 2)
+p1 <- prop.table(tab, margin = 1)[1]
+p2 <- prop.table(tab, margin = 1)[2]
+inf <- round(abs(p1-p2) - 1.96 * sqrt(p1 * (1-p1)/ sum(dat$treat=="New") + p2 * (1-p2)/ sum(dat$treat=="Old") ), 6)
+sup <- round(abs(p1-p2) + 1.96 * sqrt(p1 * (1-p1)/ sum(dat$treat=="New") + p2 * (1-p2)/ sum(dat$treat=="Old") ), 6)
+
+inf90 <- round(abs(p1-p2) - 1.64 * sqrt(p1 * (1-p1)/ sum(dat$treat=="New") + p2 * (1-p2)/ sum(dat$treat=="Old") ), 6)
+sup90 <- round(abs(p1-p2) + 1.64 * sqrt(p1 * (1-p1)/ sum(dat$treat=="New") + p2 * (1-p2)/ sum(dat$treat=="Old") ), 6)
+
+@
+
+\begin{question}
+\
+\\
+El Sistema d'Emergències Mèdiques (SEM) realizó un Ensayo Clínico con \Sexpr{nrow(dat)} personas con Infarto Agudo de Miocardio (IAM) atendidos por el SEM.\\
+\
+\\
+Se asignaron aleatoriamente a recibir el tratamiento estándar (n = \Sexpr{sum(dat$treat=="Old")}) o una nueva estrategia (n = \Sexpr{sum(dat$treat=="New")}). Durante las primeras 48 horas murieron \Sexpr{sum(dat$treat=="Old" & dat$death==1)} en el grupo asignado al tratamiento estándar  y \Sexpr{sum(dat$treat=="New" & dat$death==1)} en el grupo asignado a la nueva estrategia. \\
+\
+\\
+La siguiente tabla resume esta información: 
+\
+\\
+\begin{table}[H]
+\begin{center} 
+\begin{tabular}{ccccc}
+&  & \multicolumn{2}{c}{Muerte en las primeras 48h}  & \\
+&  &  Sí & No  & Total\\
+ \cline{3-4}
+ &  &  &  & \\
+\multirow{3}{*}{Tratamiento} 
+& Estándar & \Sexpr{sum(dat$treat=="Old" & dat$death==1)} & \Sexpr{sum(dat$treat=="Old" & dat$death==2)} & \Sexpr{sum(dat$treat=="Old")}\\
+ &  &  &  & \\
+& Nuevo    & \Sexpr{sum(dat$treat=="New" & dat$death==1)} & \Sexpr{sum(dat$treat=="New" & dat$death==2)} & \Sexpr{sum(dat$treat=="New")}\\
+ &  &  &  & \\
+ \cline{3-4}
+& Total & \Sexpr{sum(dat$death==1)} & \Sexpr{sum(dat$death==2)} & \Sexpr{nrow(dat)}\\
+\end{tabular}
+\end{center}
+\end{table}
+
+Observe que murieron el \Sexpr{ptab[2]}\% $\scriptsize \Big( \dfrac{ \Sexpr{tab[2]}}{\Sexpr{sum(dat$treat=="Old")}}*100\Big)$ de los participantes en el grupo Estándar, y el \Sexpr{ptab[1]}\% $\scriptsize \Big( \dfrac{ \Sexpr{tab[1]}}{\Sexpr{sum(dat$treat=="New")}}*100\Big)$ en el grupo Nuevo. \\
+\
+\\
+Calcule el intervalo de confianza del 95\% de cual puede ser esta diferencia de porcentajes en la población e indique, ¿Cu\'al de las siguientes respuestas es \textbf{\large FALSA}?
+\
+\vspace{0.5cm}
+
+
+\begin{answerlist}
+  \item El recorrido del intervalo de confianza que debe calcular, incluye la posibilidad de la $H_0$
+  \item El l\'imite inferior del intervalo de confianza del 95\% es \Sexpr{inf}
+  \item El l\'imite superior del intervalo de confianza del 95\% es \Sexpr{sup}
+  \item Si el recorrido de un intervalo de confianza del 95\% \textbf{NO} incluye la  $H_0$, se puede concluir que es estad\'isticamente significativo situando el p-valor en $\leq$ 0,05
+  \item Si en lugar de calcular el intervalo de confianza del 95\%, se calculara el del 90\%, el intervalo sería más estrecho
+\end{answerlist}
+
+\end{question}
+
+\
+\\
+\\
+ \vspace{4cm}
+\begin{solution}
+\
+\\
+Se debe aplicar la f\'ormula para el c\'alculo del intervalo de confianza de la diferencia entre proporciones:\\
+\
+\\
+
+${\scriptsize
+\begin{eqnarray}
+\text{IC}95\%  &=& |\Sexpr{format(p1, digits = 4, nsmall = 4)} - \Sexpr{format(p2, digits = 4, nsmall = 4)}| \pm  1,96 \sqrt{\frac{\Sexpr{format(p1, digits = 4, nsmall = 4)} (1 - \Sexpr{format(p1, digits = 4, nsmall = 4)})}{\Sexpr{sum(dat$treat=="New")}}
++                                                         \frac{\Sexpr{format(p2, digits = 4, nsmall = 4)} (1 - \Sexpr{format(p2, digits = 4, nsmall = 4)})}{\Sexpr{sum(dat$treat=="Old")}}} \\
+ &=& \lbrace \Sexpr{format(inf, digits = 4, nsmall = 4)}; \Sexpr{format(sup, digits = 4, nsmall = 4)}\rbrace
+\end{eqnarray}
+}$
+
+
+La frase que resume esta informaci\'on es: \emph{Se estima con un nivel de confianza del 95\% que entre los individuos que reciben el nuevo tratamiento puede haber entre un \Sexpr{round(inf*100, 2)}\% y un \Sexpr{round(sup*100, 2)}\% menos de muertes que entre los individuos que reciben el tratamiento estándar}\\
+\
+\\
+Observe que el recorrido de intervalo de confianza del 95\% (entre \Sexpr{inf} y \Sexpr{sup}) no est\'a incluida la $H_0$ (la hipótesis nula). Por lo tanto \textbf{es estadísticamente significativo}.\\
+\
+\\
+Si se hubiera calculado el intervalo de confianza del 90\%:\\
+\
+\\
+
+${\scriptsize
+\begin{eqnarray}
+\text{IC}90\%  &=& |\Sexpr{format(p1, digits = 4, nsmall = 4)} - \Sexpr{format(p2, digits = 4, nsmall = 4)}| \pm  1,64 \sqrt{\frac{\Sexpr{format(p1, digits = 4, nsmall = 4)} (1 - \Sexpr{format(p1, digits = 4, nsmall = 4)})}{\Sexpr{sum(dat$treat=="New")}}
++                                                         \frac{\Sexpr{format(p2, digits = 4, nsmall = 4)} (1 - \Sexpr{format(p2, digits = 4, nsmall = 4)})}{\Sexpr{sum(dat$treat=="Old")}}} \\
+ &=& \lbrace \Sexpr{format(inf90, digits = 4, nsmall = 4)}; \Sexpr{format(sup90, digits = 4, nsmall = 4)}\rbrace
+\end{eqnarray}
+}$
+
+Observe que el intervalo de confianza del 90\% es más estrecho que el del 95\%.\\
+\
+\\
+Hay una relación directa entre el intervalo de confianza y el p-valor de tal manera que si el recorrido del intervalo de confianza del 95\% \textbf{no incluye} la $H_0$ se puede afirmar que hay diferencias estad\'isticamente significativas a nivel de p-valor $\leq$ 0,05\\
+
+\begin{answerlist}
+  \item Respuesta FALSA
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+  \item Respuesta Correcta
+\end{answerlist}
+\end{solution}
+
+\exname{Pregunta 31}
+\extype{schoice}
+\exsolution{10000}
+\exshuffle{5}
+
+

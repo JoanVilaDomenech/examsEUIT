@@ -1,0 +1,98 @@
+<<echo=FALSE, results=hide>>=
+options(OutDec=",")
+library(epitools)
+
+continue <- TRUE
+while(continue)
+  {
+xwom <- sample(250:300, 1)
+aa <- round(103/268*xwom)
+bb <- xwom - aa
+xmen <- sample(425:500, 1)
+cc <- round(160/450*xmen)
+dd <- xmen - cc
+dat <- matrix(c(dd, cc, bb, aa),2,2,byrow=TRUE)
+
+resu <- riskratio(dat)
+RR <- round(resu$measure[2, 1], 3)
+lo <- round(resu$measure[2, 2], 3)
+up <- round(resu$measure[2, 3], 3)
+    if(lo < 0.99 & up >1.1 & RR > 1.05)
+    {
+      continue <- FALSE
+    }
+}
+
+@
+
+\begin{question}
+\
+\\
+En un estudio en el que se analizaban las complicaciones de los catéteres, participaron \Sexpr{xwom} mujeres y \Sexpr{xmen} hombres. Hubo que retirar el catéter a \Sexpr{aa} mujeres y a \Sexpr{cc} hombres. \\
+\
+\\
+Se ha calculado el Riesgo Relativo (cuanto riesgo tienen las mujeres respecto a los hombres) y su intervalo de confianza del 95\%. El resultado es: \\
+
+\begin{center}
+RR (IC95\%) = \Sexpr{format(RR, digits= 3, nsmall=3)} (\Sexpr{format(lo, digits= 3, nsmall=3)}; \Sexpr{format(up, digits= 3, nsmall=3)})
+\end{center}
+
+\
+\vspace{0.5cm}
+\
+\\
+¿Cu\'al de las siguientes respuestas es \textbf{\large CORRECTA}?
+\
+\vspace{0.5cm}
+
+\begin{answerlist}
+\item A pesar de que las mujeres tienen más riesgo que los hombres, no se alcanza significación estadística
+\item Las mujeres tienen significativamente menos riesgo que los hombres
+\item Las mujeres tienen significativamente más riesgo que los hombres
+\item A pesar de que las mujeres tienen menos riesgo que los hombres, no se alcanza significación estadística
+\item En esta muestra las mujeres tienen exactamente el mismo riesgo que los hombres
+\end{answerlist}
+
+\end{question}
+
+\begin{solution}
+\
+\\
+\
+\\
+En este curso no se explica como calcular intervalos de confianza de un Odds Ratio (OR) ni de un Riesgo Relativo (RR), ya que su complejidad va m\'as all\'a de los objetivos de este curso. Sin embargo s\'i que se le pide al alumno que sepa interpretarlos. Concretamente:
+\begin{itemize}
+\item La hip\'otesis nula ($H_0$) tanto en el OR como en el RR es = 1
+\item Si el recorrido del intervalo de confianza no incluye la $H_0$ (el 1), el RR (o el OR) es estad\'isticamente significativo
+\item El intervalo de confianza pemitir\'a decirdir si es estad\'isticamente significativo o no, pero:
+\begin{itemize}
+\item Si el valor de RR o OR es mayor de 1, se interpreta como que lo que hay en el numerador (sea ser mujer, recibir tratamiento, etc.)  tiene m\'as riesgo que lo que hay en el denominador. 
+\item si el valor de RR o OR es menor de 1, se interpreta como que lo que hay en el numerador (sea ser mujer, recibir tratamiento, etc.)  tiene menos riesgo que lo que hay en el denominador
+\end{itemize}
+\end{itemize}
+
+En este ejercicio se ha calculado el RR:
+\begin{displaymath}
+\text{RR} = \dfrac{\frac{\Sexpr{aa}}{\Sexpr{xwom}}}{\frac{\Sexpr{cc}}{\Sexpr{xmen}}} = \Sexpr{RR}
+\end{displaymath}
+
+
+Observe que el RR es algo mayor que 1 (concretamente\Sexpr{RR}) por lo tanto lo que hay en el numerador (las mujeres) tiene m\'as riesgo que lo que hay en el denominador (los hombres). \\
+\
+\\
+El recorrido del intervalo de confianza (de \Sexpr{lo} a \Sexpr{up}) incluye la posibilidad de la $H_0$ (es decir el 1), por lo que se concluye que no alcanza significaci\'on estad\'istica.
+
+
+\begin{answerlist}
+  \item Respuesta CORRECTA
+  \item Respuesta Falsa
+  \item Respuesta Falsa
+  \item Respuesta Falsa
+  \item Respuesta Falsa
+\end{answerlist}
+\end{solution}
+
+\exname{Pregunta 036}
+\extype{schoice}
+\exsolution{10000}
+\exshuffle{5}
